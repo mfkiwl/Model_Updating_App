@@ -1,0 +1,3 @@
+Support;;;Column;Support or Spring [kN/m];;;Rotational Restraint or Spring [kNm/rad];;;
+No.;On Nodes No.;Axis system;in Z;uX;uY;uZ;phiX;phiY;phiZ;Comment
+1;1,4,9,13,55,59,62,65;Global X,Y,Z;-;+;+;+;+;+;+;

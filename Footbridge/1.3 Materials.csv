@@ -1,0 +1,5 @@
+Material;Material;Modulus of Elasticity;Shear Modulus;Poisson's Ratio;Specific Weight;Coeff. of Th. Exp.;Partial Factor;Material;
+No.;Description;E [kN/cm2];G [kN/cm2];ny [-];gamma [kN/m3];alpha [1/°C];gammaM [-];Model;Comment
+1;Concrete C25/30 | DIN 1045-1:2008-08;2670.00;1112.50;0.200;25.00;0.00001;1.00;Isotropic Linear Elastic;
+2;Steel 250 (Plate and Floorplate) | AS/NZS 3678;20000.00;8000.00;0.250;78.50;0.0000117;1.00;Isotropic Linear Elastic;
+3;Steel A36 | ANSI/AISC 360-16:2016;19994.80;7722.13;0.295;78.49;0.000012;1.00;Isotropic Linear Elastic;

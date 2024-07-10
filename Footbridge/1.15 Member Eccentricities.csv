@@ -1,0 +1,2 @@
+Eccen.;Reference;Member Start - Eccentricity [mm];;;Member End - Eccentricity [mm];;;Cross-Section Alignment;;Transverse offset from cross-section of another object;;;;Axial offset from adjoining objects at;;Member hinge location at end node;;
+No.;System;ei,X;ei,Y;ei,Z;ej,X;ej,Y;ej,Z;y-Axis;z-Axis;Object Type;Object No.;y-Axis;z-Axis;Member Start;Member End;Member Start;Member End;Comment

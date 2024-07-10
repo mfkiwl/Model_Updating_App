@@ -1,0 +1,4 @@
+;;Definition;Coordinate;Force [kN];;;Moment [kNm];;;Direction;Force;Moment;
+No.;On Nodes No.;Type;System;PX;PY;PZ;MX;MY;MZ;Type;P [kN];M [kNm];Comment
+1;16,17,20,21,24,25,28,29,32,33,36,37,40,41,44,45,48,49,52,53;By components;0  |  Global XYZ;0.000;0.000;-1.000;0.000;0.000;0.000;;;;
+2;11,14,57,60;By components;0  |  Global XYZ;0.000;0.000;-1.000;0.000;0.000;0.000;;;;

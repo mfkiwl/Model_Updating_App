@@ -1,0 +1,3 @@
+Load;Load Case;;ASCE 7-16;Self-Weight  -  Factor in Direction;;;;;
+Case;Description;To Solve;Action Category;Active;X;Y;Z;L <= 100 psf;Comment
+LC1;SLF;+;Dead;+;0.000;0.000;-1.000;;
