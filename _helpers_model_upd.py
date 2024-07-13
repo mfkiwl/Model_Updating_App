@@ -16,7 +16,7 @@ def mas_dist2(mu=-4.6, std=0.5, n_samples=1):
     return float(round(samples[0], 10))
 
 def Et_dist(mu=1.5, std=0.2, n_samples=1):
-    log_mu = np.log(mu)  # Calcular el logaritmo natural de la media
+    log_mu = np.log(mu)  
     samples = np.random.lognormal(mean=log_mu, sigma=std, size=n_samples)
     return np.round(samples, 2)[0]
 
@@ -48,7 +48,6 @@ def metropolis_hastings(model, target_freq=8.74, init_mass=0, n_iterations=100, 
         freq_difference = proposed_freq_4 - target_freq
         freq_diff.append(freq_difference)
         
-        # Adjust the acceptance criterion to optimize the difference
         acceptance_ratio = np.exp(-np.abs(freq_difference) / 0.1)  # Here, 0.1 is the desired std_dev
         
         if acceptance_ratio > np.random.rand():
@@ -110,12 +109,9 @@ def run_model_single(model,mass = '-4'):
         print(proposed_freq_4,proposed_mass)
         
 
-# def _run_chain_wrapper(args):
-#     i, model, init_mass, iterations = args
-#     return metropolis_hastings_iomac(model, init_mass=init_mass, n_iterations=iterations, chain_id=i)
 def _run_chain_wrapper(args):
     i, model, init_mass, iterations = args
-    return metropolis_hastings(model, target_freq=8.74, init_mass=init_mass, n_iterations=iterations, std_dev=0.1, chain_id=0)
+    return metropolis_hastings(model, target_freq=8.74, init_mass=init_mass, n_iterations=iterations, std_dev=0.2, chain_id=0)
 
 def run_chains_parallel(models, num_chains=2, n_iterations=5):
     if len(models) != num_chains:

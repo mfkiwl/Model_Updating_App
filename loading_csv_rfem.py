@@ -14,7 +14,6 @@ def expand_ranges(range_str):
 
 def run_parsers(_dir):
     
-    # sys.path.append(_dir)
 
     # Read the csv file, using semicolon as separator and skipping the first row
     nodes_df = pd.read_csv(_dir /'FE Mesh Nodes.csv', delimiter=';', skiprows=1)
@@ -65,8 +64,6 @@ def run_parsers(_dir):
     surfaces_df.to_csv(_dir /'Surface.txt', sep='\t', index=False, header=False)
     
     #%%            element id 
-    # Read the csv file, using semicolon as separator, skipping the first row, and specifying the encoding
-    # Read the csv file, using semicolon as separator, skipping the first row, and specifying the encoding
     members_df = pd.read_csv(_dir /'1.17 Members.csv', delimiter=';', skiprows=1, encoding='ISO-8859-1')
     
     # Select the necessary columns
@@ -121,9 +118,6 @@ def run_parsers(_dir):
 
 # %%  Support 
 
-    # pf_support = pd.read_csv(_dir /'1.7 Nodal Supports.csv',delimiter = ';',skiprows = 1,encoding='ISO-8859-1')
-    # pd_support = pf_support[pd_surface_load.columns[1]]
-    # pd_support.to_csv(_dir /'supports.txt', sep=',', index=False, header=False)
     f_support = pd.read_csv(_dir / '1.7 Nodal Supports.csv', delimiter=';', skiprows=1, encoding='ISO-8859-1')
     
     # Select the 'On Nodes No.' column and split it into a list of integers
