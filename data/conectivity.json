@@ -1,0 +1,626 @@
+{
+    "1": {
+        "nodei": 1,
+        "nodej": 2
+    },
+    "2": {
+        "nodei": 2,
+        "nodej": 3
+    },
+    "3": {
+        "nodei": 6,
+        "nodej": 3
+    },
+    "4": {
+        "nodei": 4,
+        "nodej": 5
+    },
+    "5": {
+        "nodei": 5,
+        "nodej": 6
+    },
+    "6": {
+        "nodei": 7,
+        "nodej": 6
+    },
+    "7": {
+        "nodei": 3,
+        "nodej": 8
+    },
+    "8": {
+        "nodei": 5,
+        "nodej": 10
+    },
+    "9": {
+        "nodei": 6,
+        "nodej": 11
+    },
+    "10": {
+        "nodei": 7,
+        "nodej": 14
+    },
+    "11": {
+        "nodei": 11,
+        "nodej": 8
+    },
+    "12": {
+        "nodei": 9,
+        "nodej": 10
+    },
+    "13": {
+        "nodei": 10,
+        "nodej": 11
+    },
+    "14": {
+        "nodei": 12,
+        "nodej": 11
+    },
+    "15": {
+        "nodei": 14,
+        "nodej": 11
+    },
+    "16": {
+        "nodei": 12,
+        "nodej": 15
+    },
+    "17": {
+        "nodei": 13,
+        "nodej": 14
+    },
+    "18": {
+        "nodei": 15,
+        "nodej": 14
+    },
+    "19": {
+        "nodei": 11,
+        "nodej": 16
+    },
+    "20": {
+        "nodei": 12,
+        "nodej": 16
+    },
+    "21": {
+        "nodei": 14,
+        "nodej": 17
+    },
+    "22": {
+        "nodei": 15,
+        "nodej": 17
+    },
+    "23": {
+        "nodei": 12,
+        "nodej": 18
+    },
+    "24": {
+        "nodei": 15,
+        "nodej": 18
+    },
+    "25": {
+        "nodei": 15,
+        "nodej": 19
+    },
+    "26": {
+        "nodei": 17,
+        "nodej": 16
+    },
+    "27": {
+        "nodei": 16,
+        "nodej": 18
+    },
+    "28": {
+        "nodei": 17,
+        "nodej": 19
+    },
+    "29": {
+        "nodei": 20,
+        "nodej": 16
+    },
+    "30": {
+        "nodei": 16,
+        "nodej": 21
+    },
+    "31": {
+        "nodei": 19,
+        "nodej": 18
+    },
+    "32": {
+        "nodei": 21,
+        "nodej": 17
+    },
+    "33": {
+        "nodei": 18,
+        "nodej": 20
+    },
+    "34": {
+        "nodei": 19,
+        "nodej": 21
+    },
+    "35": {
+        "nodei": 18,
+        "nodej": 22
+    },
+    "36": {
+        "nodei": 21,
+        "nodej": 20
+    },
+    "37": {
+        "nodei": 18,
+        "nodej": 23
+    },
+    "38": {
+        "nodei": 19,
+        "nodej": 23
+    },
+    "39": {
+        "nodei": 20,
+        "nodej": 22
+    },
+    "40": {
+        "nodei": 21,
+        "nodej": 23
+    },
+    "41": {
+        "nodei": 24,
+        "nodej": 20
+    },
+    "42": {
+        "nodei": 21,
+        "nodej": 24
+    },
+    "43": {
+        "nodei": 22,
+        "nodej": 23
+    },
+    "44": {
+        "nodei": 25,
+        "nodej": 21
+    },
+    "45": {
+        "nodei": 22,
+        "nodej": 24
+    },
+    "46": {
+        "nodei": 23,
+        "nodej": 25
+    },
+    "47": {
+        "nodei": 22,
+        "nodej": 26
+    },
+    "48": {
+        "nodei": 25,
+        "nodej": 24
+    },
+    "49": {
+        "nodei": 23,
+        "nodej": 26
+    },
+    "50": {
+        "nodei": 23,
+        "nodej": 27
+    },
+    "51": {
+        "nodei": 24,
+        "nodej": 26
+    },
+    "52": {
+        "nodei": 25,
+        "nodej": 27
+    },
+    "53": {
+        "nodei": 28,
+        "nodej": 24
+    },
+    "54": {
+        "nodei": 24,
+        "nodej": 29
+    },
+    "55": {
+        "nodei": 27,
+        "nodej": 26
+    },
+    "56": {
+        "nodei": 29,
+        "nodej": 25
+    },
+    "57": {
+        "nodei": 26,
+        "nodej": 28
+    },
+    "58": {
+        "nodei": 27,
+        "nodej": 29
+    },
+    "59": {
+        "nodei": 26,
+        "nodej": 30
+    },
+    "60": {
+        "nodei": 29,
+        "nodej": 28
+    },
+    "61": {
+        "nodei": 26,
+        "nodej": 31
+    },
+    "62": {
+        "nodei": 27,
+        "nodej": 31
+    },
+    "63": {
+        "nodei": 28,
+        "nodej": 30
+    },
+    "64": {
+        "nodei": 29,
+        "nodej": 31
+    },
+    "65": {
+        "nodei": 32,
+        "nodej": 28
+    },
+    "66": {
+        "nodei": 29,
+        "nodej": 32
+    },
+    "67": {
+        "nodei": 30,
+        "nodej": 31
+    },
+    "68": {
+        "nodei": 33,
+        "nodej": 29
+    },
+    "69": {
+        "nodei": 30,
+        "nodej": 32
+    },
+    "70": {
+        "nodei": 31,
+        "nodej": 33
+    },
+    "71": {
+        "nodei": 30,
+        "nodej": 34
+    },
+    "72": {
+        "nodei": 33,
+        "nodej": 32
+    },
+    "73": {
+        "nodei": 35,
+        "nodej": 30
+    },
+    "74": {
+        "nodei": 31,
+        "nodej": 35
+    },
+    "75": {
+        "nodei": 32,
+        "nodej": 34
+    },
+    "76": {
+        "nodei": 33,
+        "nodej": 35
+    },
+    "77": {
+        "nodei": 36,
+        "nodej": 32
+    },
+    "78": {
+        "nodei": 33,
+        "nodej": 36
+    },
+    "79": {
+        "nodei": 35,
+        "nodej": 34
+    },
+    "80": {
+        "nodei": 37,
+        "nodej": 33
+    },
+    "81": {
+        "nodei": 34,
+        "nodej": 36
+    },
+    "82": {
+        "nodei": 35,
+        "nodej": 37
+    },
+    "83": {
+        "nodei": 34,
+        "nodej": 38
+    },
+    "84": {
+        "nodei": 37,
+        "nodej": 36
+    },
+    "85": {
+        "nodei": 35,
+        "nodej": 38
+    },
+    "86": {
+        "nodei": 35,
+        "nodej": 39
+    },
+    "87": {
+        "nodei": 36,
+        "nodej": 38
+    },
+    "88": {
+        "nodei": 37,
+        "nodej": 39
+    },
+    "89": {
+        "nodei": 40,
+        "nodej": 36
+    },
+    "90": {
+        "nodei": 37,
+        "nodej": 40
+    },
+    "91": {
+        "nodei": 38,
+        "nodej": 39
+    },
+    "92": {
+        "nodei": 41,
+        "nodej": 37
+    },
+    "93": {
+        "nodei": 38,
+        "nodej": 40
+    },
+    "94": {
+        "nodei": 39,
+        "nodej": 41
+    },
+    "95": {
+        "nodei": 38,
+        "nodej": 42
+    },
+    "96": {
+        "nodei": 41,
+        "nodej": 40
+    },
+    "97": {
+        "nodei": 43,
+        "nodej": 38
+    },
+    "98": {
+        "nodei": 39,
+        "nodej": 43
+    },
+    "99": {
+        "nodei": 40,
+        "nodej": 42
+    },
+    "100": {
+        "nodei": 41,
+        "nodej": 43
+    },
+    "101": {
+        "nodei": 44,
+        "nodej": 40
+    },
+    "102": {
+        "nodei": 40,
+        "nodej": 45
+    },
+    "103": {
+        "nodei": 43,
+        "nodej": 42
+    },
+    "104": {
+        "nodei": 45,
+        "nodej": 41
+    },
+    "105": {
+        "nodei": 42,
+        "nodej": 44
+    },
+    "106": {
+        "nodei": 43,
+        "nodej": 45
+    },
+    "107": {
+        "nodei": 42,
+        "nodej": 46
+    },
+    "108": {
+        "nodei": 45,
+        "nodej": 44
+    },
+    "109": {
+        "nodei": 43,
+        "nodej": 46
+    },
+    "110": {
+        "nodei": 43,
+        "nodej": 47
+    },
+    "111": {
+        "nodei": 44,
+        "nodej": 46
+    },
+    "112": {
+        "nodei": 45,
+        "nodej": 47
+    },
+    "113": {
+        "nodei": 48,
+        "nodej": 44
+    },
+    "114": {
+        "nodei": 45,
+        "nodej": 48
+    },
+    "115": {
+        "nodei": 46,
+        "nodej": 47
+    },
+    "116": {
+        "nodei": 49,
+        "nodej": 45
+    },
+    "117": {
+        "nodei": 46,
+        "nodej": 48
+    },
+    "118": {
+        "nodei": 47,
+        "nodej": 49
+    },
+    "119": {
+        "nodei": 46,
+        "nodej": 50
+    },
+    "120": {
+        "nodei": 48,
+        "nodej": 49
+    },
+    "121": {
+        "nodei": 51,
+        "nodej": 46
+    },
+    "122": {
+        "nodei": 47,
+        "nodej": 51
+    },
+    "123": {
+        "nodei": 48,
+        "nodej": 50
+    },
+    "124": {
+        "nodei": 49,
+        "nodej": 51
+    },
+    "125": {
+        "nodei": 52,
+        "nodej": 48
+    },
+    "126": {
+        "nodei": 48,
+        "nodej": 53
+    },
+    "127": {
+        "nodei": 51,
+        "nodej": 50
+    },
+    "128": {
+        "nodei": 53,
+        "nodej": 49
+    },
+    "129": {
+        "nodei": 50,
+        "nodej": 52
+    },
+    "130": {
+        "nodei": 51,
+        "nodej": 53
+    },
+    "131": {
+        "nodei": 53,
+        "nodej": 52
+    },
+    "132": {
+        "nodei": 50,
+        "nodej": 58
+    },
+    "133": {
+        "nodei": 58,
+        "nodej": 51
+    },
+    "134": {
+        "nodei": 51,
+        "nodej": 61
+    },
+    "135": {
+        "nodei": 57,
+        "nodej": 52
+    },
+    "136": {
+        "nodei": 58,
+        "nodej": 52
+    },
+    "137": {
+        "nodei": 60,
+        "nodej": 53
+    },
+    "138": {
+        "nodei": 61,
+        "nodej": 53
+    },
+    "139": {
+        "nodei": 54,
+        "nodej": 57
+    },
+    "140": {
+        "nodei": 56,
+        "nodej": 55
+    },
+    "141": {
+        "nodei": 57,
+        "nodej": 56
+    },
+    "142": {
+        "nodei": 57,
+        "nodej": 58
+    },
+    "143": {
+        "nodei": 60,
+        "nodej": 57
+    },
+    "144": {
+        "nodei": 61,
+        "nodej": 58
+    },
+    "145": {
+        "nodei": 59,
+        "nodej": 60
+    },
+    "146": {
+        "nodei": 60,
+        "nodej": 61
+    },
+    "147": {
+        "nodei": 54,
+        "nodej": 64
+    },
+    "148": {
+        "nodei": 56,
+        "nodej": 66
+    },
+    "149": {
+        "nodei": 57,
+        "nodej": 67
+    },
+    "150": {
+        "nodei": 60,
+        "nodej": 68
+    },
+    "151": {
+        "nodei": 62,
+        "nodej": 63
+    },
+    "152": {
+        "nodei": 64,
+        "nodej": 63
+    },
+    "153": {
+        "nodei": 64,
+        "nodej": 67
+    },
+    "154": {
+        "nodei": 66,
+        "nodej": 65
+    },
+    "155": {
+        "nodei": 67,
+        "nodej": 66
+    },
+    "156": {
+        "nodei": 68,
+        "nodej": 67
+    }
+}

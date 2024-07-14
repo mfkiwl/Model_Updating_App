@@ -1,13 +1,13 @@
 
 import numpy as np 
-
+import json
 
 def nodes2dict(Model)->dict:
     model_nodes: np.ndarray = Model.nodes
     nodes_dict = {}
 
     for id, x, y, z in model_nodes:
-        nodes_dict[id] = {
+        nodes_dict[int(id)] = {
             "x": float(x),
             "y": float(y),
             "z": float(z)
@@ -20,7 +20,7 @@ def conect2dict(Model)->dict:
     conectivity_dict = {}
 
     for eleid, nodei,nodej in model_conectivity:
-        conectivity_dict[eleid] = {
+        conectivity_dict[int(eleid)] = {
             "nodei" : int(nodei),
             "nodej" : int(nodej)
         }
@@ -44,3 +44,6 @@ def mesh_quad2dict(Model)->dict:
         }
     return quads_dict
 
+def save_json(data:dict, path:str)->None:
+    with open(path, 'w') as file:
+        json.dump(data, file, indent=4)
