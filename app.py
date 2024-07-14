@@ -31,6 +31,11 @@ def get_lines():
     lines = load_json('data/conectivity.json')
     return JSONResponse(content=lines)
 
+@app.get("/api/Mesh")
+def get_lines():
+    mesh = load_json('data/mesh_shells.json')
+    return JSONResponse(content=mesh)
+
 origins = [
     "http://localhost",
     "http://localhost:8888"]

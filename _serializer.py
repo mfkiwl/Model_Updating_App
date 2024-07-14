@@ -31,16 +31,16 @@ def mesh_quad2dict(Model)->dict:
     this function assumes that is 4 nodes quad 
     element
     '''
-    model_quads: np.ndarray= Model.mesh_cells()
+    model_quads: np.ndarray= Model.mesh_cells
     quads_dict = {}
 
     for shll_id , mat_id , nodei,nodej,nodek, nodel in model_quads:
-        quads_dict[shll_id] = {
-            "mat_id":mat_id,
-            "nodei":nodei,
-            "nodej":nodej,
-            "nodek":nodek,
-            "nodel":nodel
+        quads_dict[int(shll_id)] = {
+            "mat_id":int(mat_id),
+            "nodei":int(nodei),
+            "nodej":int(nodej),
+            "nodek":int(nodek),
+            "nodel":int(nodel)
         }
     return quads_dict
 

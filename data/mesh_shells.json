@@ -1,0 +1,3880 @@
+{
+    "1": {
+        "mat_id": 1,
+        "nodei": 509,
+        "nodej": 11,
+        "nodek": 512,
+        "nodel": 634
+    },
+    "2": {
+        "mat_id": 1,
+        "nodei": 512,
+        "nodej": 490,
+        "nodek": 576,
+        "nodel": 634
+    },
+    "3": {
+        "mat_id": 1,
+        "nodei": 576,
+        "nodej": 491,
+        "nodek": 577,
+        "nodel": 634
+    },
+    "4": {
+        "mat_id": 1,
+        "nodei": 577,
+        "nodej": 500,
+        "nodek": 509,
+        "nodel": 634
+    },
+    "5": {
+        "mat_id": 1,
+        "nodei": 576,
+        "nodej": 490,
+        "nodek": 513,
+        "nodel": 635
+    },
+    "6": {
+        "mat_id": 1,
+        "nodei": 513,
+        "nodej": 501,
+        "nodek": 578,
+        "nodel": 635
+    },
+    "7": {
+        "mat_id": 1,
+        "nodei": 578,
+        "nodej": 520,
+        "nodek": 579,
+        "nodel": 635
+    },
+    "8": {
+        "mat_id": 1,
+        "nodei": 579,
+        "nodej": 491,
+        "nodek": 576,
+        "nodel": 635
+    },
+    "9": {
+        "mat_id": 1,
+        "nodei": 578,
+        "nodej": 501,
+        "nodek": 514,
+        "nodel": 636
+    },
+    "10": {
+        "mat_id": 1,
+        "nodei": 514,
+        "nodej": 507,
+        "nodek": 580,
+        "nodel": 636
+    },
+    "11": {
+        "mat_id": 1,
+        "nodei": 580,
+        "nodej": 521,
+        "nodek": 581,
+        "nodel": 636
+    },
+    "12": {
+        "mat_id": 1,
+        "nodei": 581,
+        "nodej": 520,
+        "nodek": 578,
+        "nodel": 636
+    },
+    "13": {
+        "mat_id": 1,
+        "nodei": 580,
+        "nodej": 507,
+        "nodek": 515,
+        "nodel": 637
+    },
+    "14": {
+        "mat_id": 1,
+        "nodei": 515,
+        "nodej": 523,
+        "nodek": 582,
+        "nodel": 637
+    },
+    "15": {
+        "mat_id": 1,
+        "nodei": 582,
+        "nodej": 522,
+        "nodek": 583,
+        "nodel": 637
+    },
+    "16": {
+        "mat_id": 1,
+        "nodei": 583,
+        "nodej": 521,
+        "nodek": 580,
+        "nodel": 637
+    },
+    "17": {
+        "mat_id": 1,
+        "nodei": 582,
+        "nodej": 523,
+        "nodek": 516,
+        "nodel": 638
+    },
+    "18": {
+        "mat_id": 1,
+        "nodei": 516,
+        "nodej": 78,
+        "nodek": 584,
+        "nodel": 638
+    },
+    "19": {
+        "mat_id": 1,
+        "nodei": 584,
+        "nodej": 524,
+        "nodek": 585,
+        "nodel": 638
+    },
+    "20": {
+        "mat_id": 1,
+        "nodei": 585,
+        "nodej": 522,
+        "nodek": 582,
+        "nodel": 638
+    },
+    "21": {
+        "mat_id": 1,
+        "nodei": 584,
+        "nodej": 78,
+        "nodek": 517,
+        "nodel": 639
+    },
+    "22": {
+        "mat_id": 1,
+        "nodei": 517,
+        "nodej": 525,
+        "nodek": 586,
+        "nodel": 639
+    },
+    "23": {
+        "mat_id": 1,
+        "nodei": 586,
+        "nodej": 76,
+        "nodek": 587,
+        "nodel": 639
+    },
+    "24": {
+        "mat_id": 1,
+        "nodei": 587,
+        "nodej": 524,
+        "nodek": 584,
+        "nodel": 639
+    },
+    "25": {
+        "mat_id": 1,
+        "nodei": 586,
+        "nodej": 525,
+        "nodek": 518,
+        "nodel": 640
+    },
+    "26": {
+        "mat_id": 1,
+        "nodei": 518,
+        "nodej": 526,
+        "nodek": 588,
+        "nodel": 640
+    },
+    "27": {
+        "mat_id": 1,
+        "nodei": 588,
+        "nodej": 527,
+        "nodek": 589,
+        "nodel": 640
+    },
+    "28": {
+        "mat_id": 1,
+        "nodei": 589,
+        "nodej": 76,
+        "nodek": 586,
+        "nodel": 640
+    },
+    "29": {
+        "mat_id": 1,
+        "nodei": 588,
+        "nodej": 526,
+        "nodek": 519,
+        "nodel": 641
+    },
+    "30": {
+        "mat_id": 1,
+        "nodei": 519,
+        "nodej": 8,
+        "nodek": 506,
+        "nodel": 641
+    },
+    "31": {
+        "mat_id": 1,
+        "nodei": 506,
+        "nodej": 74,
+        "nodek": 590,
+        "nodel": 641
+    },
+    "32": {
+        "mat_id": 1,
+        "nodei": 590,
+        "nodej": 527,
+        "nodek": 588,
+        "nodel": 641
+    },
+    "33": {
+        "mat_id": 1,
+        "nodei": 508,
+        "nodej": 500,
+        "nodek": 577,
+        "nodel": 642
+    },
+    "34": {
+        "mat_id": 1,
+        "nodei": 577,
+        "nodej": 491,
+        "nodek": 591,
+        "nodel": 642
+    },
+    "35": {
+        "mat_id": 1,
+        "nodei": 591,
+        "nodej": 528,
+        "nodek": 492,
+        "nodel": 642
+    },
+    "36": {
+        "mat_id": 1,
+        "nodei": 492,
+        "nodej": 6,
+        "nodek": 508,
+        "nodel": 642
+    },
+    "37": {
+        "mat_id": 1,
+        "nodei": 591,
+        "nodej": 491,
+        "nodek": 579,
+        "nodel": 643
+    },
+    "38": {
+        "mat_id": 1,
+        "nodei": 579,
+        "nodej": 520,
+        "nodek": 592,
+        "nodel": 643
+    },
+    "39": {
+        "mat_id": 1,
+        "nodei": 592,
+        "nodej": 529,
+        "nodek": 493,
+        "nodel": 643
+    },
+    "40": {
+        "mat_id": 1,
+        "nodei": 493,
+        "nodej": 528,
+        "nodek": 591,
+        "nodel": 643
+    },
+    "41": {
+        "mat_id": 1,
+        "nodei": 592,
+        "nodej": 520,
+        "nodek": 581,
+        "nodel": 644
+    },
+    "42": {
+        "mat_id": 1,
+        "nodei": 581,
+        "nodej": 521,
+        "nodek": 593,
+        "nodel": 644
+    },
+    "43": {
+        "mat_id": 1,
+        "nodei": 593,
+        "nodej": 72,
+        "nodek": 494,
+        "nodel": 644
+    },
+    "44": {
+        "mat_id": 1,
+        "nodei": 494,
+        "nodej": 529,
+        "nodek": 592,
+        "nodel": 644
+    },
+    "45": {
+        "mat_id": 1,
+        "nodei": 593,
+        "nodej": 521,
+        "nodek": 583,
+        "nodel": 645
+    },
+    "46": {
+        "mat_id": 1,
+        "nodei": 583,
+        "nodej": 522,
+        "nodek": 594,
+        "nodel": 645
+    },
+    "47": {
+        "mat_id": 1,
+        "nodei": 594,
+        "nodej": 530,
+        "nodek": 495,
+        "nodel": 645
+    },
+    "48": {
+        "mat_id": 1,
+        "nodei": 495,
+        "nodej": 72,
+        "nodek": 593,
+        "nodel": 645
+    },
+    "49": {
+        "mat_id": 1,
+        "nodei": 594,
+        "nodej": 522,
+        "nodek": 585,
+        "nodel": 646
+    },
+    "50": {
+        "mat_id": 1,
+        "nodei": 585,
+        "nodej": 524,
+        "nodek": 595,
+        "nodel": 646
+    },
+    "51": {
+        "mat_id": 1,
+        "nodei": 595,
+        "nodej": 531,
+        "nodek": 496,
+        "nodel": 646
+    },
+    "52": {
+        "mat_id": 1,
+        "nodei": 496,
+        "nodej": 530,
+        "nodek": 594,
+        "nodel": 646
+    },
+    "53": {
+        "mat_id": 1,
+        "nodei": 595,
+        "nodej": 524,
+        "nodek": 587,
+        "nodel": 647
+    },
+    "54": {
+        "mat_id": 1,
+        "nodei": 587,
+        "nodej": 76,
+        "nodek": 596,
+        "nodel": 647
+    },
+    "55": {
+        "mat_id": 1,
+        "nodei": 596,
+        "nodej": 70,
+        "nodek": 497,
+        "nodel": 647
+    },
+    "56": {
+        "mat_id": 1,
+        "nodei": 497,
+        "nodej": 531,
+        "nodek": 595,
+        "nodel": 647
+    },
+    "57": {
+        "mat_id": 1,
+        "nodei": 596,
+        "nodej": 76,
+        "nodek": 589,
+        "nodel": 648
+    },
+    "58": {
+        "mat_id": 1,
+        "nodei": 589,
+        "nodej": 527,
+        "nodek": 597,
+        "nodel": 648
+    },
+    "59": {
+        "mat_id": 1,
+        "nodei": 597,
+        "nodej": 532,
+        "nodek": 498,
+        "nodel": 648
+    },
+    "60": {
+        "mat_id": 1,
+        "nodei": 498,
+        "nodej": 70,
+        "nodek": 596,
+        "nodel": 648
+    },
+    "61": {
+        "mat_id": 1,
+        "nodei": 597,
+        "nodej": 527,
+        "nodek": 590,
+        "nodel": 649
+    },
+    "62": {
+        "mat_id": 1,
+        "nodei": 590,
+        "nodej": 74,
+        "nodek": 505,
+        "nodel": 649
+    },
+    "63": {
+        "mat_id": 1,
+        "nodei": 505,
+        "nodej": 3,
+        "nodek": 499,
+        "nodel": 649
+    },
+    "64": {
+        "mat_id": 1,
+        "nodei": 499,
+        "nodej": 532,
+        "nodek": 597,
+        "nodel": 649
+    },
+    "65": {
+        "mat_id": 2,
+        "nodei": 142,
+        "nodej": 14,
+        "nodek": 511,
+        "nodel": 650
+    },
+    "66": {
+        "mat_id": 2,
+        "nodei": 511,
+        "nodej": 533,
+        "nodek": 598,
+        "nodel": 650
+    },
+    "67": {
+        "mat_id": 2,
+        "nodei": 598,
+        "nodej": 534,
+        "nodek": 599,
+        "nodel": 650
+    },
+    "68": {
+        "mat_id": 2,
+        "nodei": 599,
+        "nodej": 535,
+        "nodek": 142,
+        "nodel": 650
+    },
+    "69": {
+        "mat_id": 2,
+        "nodei": 598,
+        "nodej": 533,
+        "nodek": 510,
+        "nodel": 651
+    },
+    "70": {
+        "mat_id": 2,
+        "nodei": 510,
+        "nodej": 7,
+        "nodek": 502,
+        "nodel": 651
+    },
+    "71": {
+        "mat_id": 2,
+        "nodei": 502,
+        "nodej": 536,
+        "nodek": 600,
+        "nodel": 651
+    },
+    "72": {
+        "mat_id": 2,
+        "nodei": 600,
+        "nodej": 534,
+        "nodek": 598,
+        "nodel": 651
+    },
+    "73": {
+        "mat_id": 2,
+        "nodei": 146,
+        "nodej": 535,
+        "nodek": 599,
+        "nodel": 652
+    },
+    "74": {
+        "mat_id": 2,
+        "nodei": 599,
+        "nodej": 534,
+        "nodek": 601,
+        "nodel": 652
+    },
+    "75": {
+        "mat_id": 2,
+        "nodei": 601,
+        "nodej": 537,
+        "nodek": 602,
+        "nodel": 652
+    },
+    "76": {
+        "mat_id": 2,
+        "nodei": 602,
+        "nodej": 538,
+        "nodek": 146,
+        "nodel": 652
+    },
+    "77": {
+        "mat_id": 2,
+        "nodei": 601,
+        "nodej": 534,
+        "nodek": 600,
+        "nodel": 653
+    },
+    "78": {
+        "mat_id": 2,
+        "nodei": 600,
+        "nodej": 536,
+        "nodek": 503,
+        "nodel": 653
+    },
+    "79": {
+        "mat_id": 2,
+        "nodei": 503,
+        "nodej": 539,
+        "nodek": 603,
+        "nodel": 653
+    },
+    "80": {
+        "mat_id": 2,
+        "nodei": 603,
+        "nodej": 537,
+        "nodek": 601,
+        "nodel": 653
+    },
+    "81": {
+        "mat_id": 2,
+        "nodei": 149,
+        "nodej": 538,
+        "nodek": 602,
+        "nodel": 654
+    },
+    "82": {
+        "mat_id": 2,
+        "nodei": 602,
+        "nodej": 537,
+        "nodek": 604,
+        "nodel": 654
+    },
+    "83": {
+        "mat_id": 2,
+        "nodei": 604,
+        "nodej": 500,
+        "nodek": 509,
+        "nodel": 654
+    },
+    "84": {
+        "mat_id": 2,
+        "nodei": 509,
+        "nodej": 11,
+        "nodek": 149,
+        "nodel": 654
+    },
+    "85": {
+        "mat_id": 2,
+        "nodei": 604,
+        "nodej": 537,
+        "nodek": 603,
+        "nodel": 655
+    },
+    "86": {
+        "mat_id": 2,
+        "nodei": 603,
+        "nodej": 539,
+        "nodek": 504,
+        "nodel": 655
+    },
+    "87": {
+        "mat_id": 2,
+        "nodei": 504,
+        "nodej": 6,
+        "nodek": 508,
+        "nodel": 655
+    },
+    "88": {
+        "mat_id": 2,
+        "nodei": 508,
+        "nodej": 500,
+        "nodek": 604,
+        "nodel": 655
+    },
+    "89": {
+        "mat_id": 3,
+        "nodei": 145,
+        "nodej": 14,
+        "nodek": 142,
+        "nodel": 354
+    },
+    "90": {
+        "mat_id": 3,
+        "nodei": 142,
+        "nodej": 535,
+        "nodek": 143,
+        "nodel": 354
+    },
+    "91": {
+        "mat_id": 3,
+        "nodei": 143,
+        "nodej": 79,
+        "nodek": 144,
+        "nodel": 354
+    },
+    "92": {
+        "mat_id": 3,
+        "nodei": 144,
+        "nodej": 17,
+        "nodek": 145,
+        "nodel": 354
+    },
+    "93": {
+        "mat_id": 3,
+        "nodei": 143,
+        "nodej": 535,
+        "nodek": 146,
+        "nodel": 355
+    },
+    "94": {
+        "mat_id": 3,
+        "nodei": 146,
+        "nodej": 538,
+        "nodek": 147,
+        "nodel": 355
+    },
+    "95": {
+        "mat_id": 3,
+        "nodei": 147,
+        "nodej": 80,
+        "nodek": 148,
+        "nodel": 355
+    },
+    "96": {
+        "mat_id": 3,
+        "nodei": 148,
+        "nodej": 79,
+        "nodek": 143,
+        "nodel": 355
+    },
+    "97": {
+        "mat_id": 3,
+        "nodei": 147,
+        "nodej": 538,
+        "nodek": 149,
+        "nodel": 356
+    },
+    "98": {
+        "mat_id": 3,
+        "nodei": 149,
+        "nodej": 11,
+        "nodek": 150,
+        "nodel": 356
+    },
+    "99": {
+        "mat_id": 3,
+        "nodei": 150,
+        "nodej": 16,
+        "nodek": 151,
+        "nodel": 356
+    },
+    "100": {
+        "mat_id": 3,
+        "nodei": 151,
+        "nodej": 80,
+        "nodek": 147,
+        "nodel": 356
+    },
+    "101": {
+        "mat_id": 3,
+        "nodei": 153,
+        "nodej": 80,
+        "nodek": 151,
+        "nodel": 357
+    },
+    "102": {
+        "mat_id": 3,
+        "nodei": 151,
+        "nodej": 16,
+        "nodek": 152,
+        "nodel": 357
+    },
+    "103": {
+        "mat_id": 3,
+        "nodei": 152,
+        "nodej": 81,
+        "nodek": 153,
+        "nodel": 357
+    },
+    "104": {
+        "mat_id": 3,
+        "nodei": 152,
+        "nodej": 16,
+        "nodek": 154,
+        "nodel": 358
+    },
+    "105": {
+        "mat_id": 3,
+        "nodei": 154,
+        "nodej": 540,
+        "nodek": 155,
+        "nodel": 358
+    },
+    "106": {
+        "mat_id": 3,
+        "nodei": 155,
+        "nodej": 126,
+        "nodek": 156,
+        "nodel": 358
+    },
+    "107": {
+        "mat_id": 3,
+        "nodei": 156,
+        "nodej": 81,
+        "nodek": 152,
+        "nodel": 358
+    },
+    "108": {
+        "mat_id": 3,
+        "nodei": 159,
+        "nodej": 126,
+        "nodek": 155,
+        "nodel": 359
+    },
+    "109": {
+        "mat_id": 3,
+        "nodei": 155,
+        "nodej": 540,
+        "nodek": 157,
+        "nodel": 359
+    },
+    "110": {
+        "mat_id": 3,
+        "nodei": 157,
+        "nodej": 20,
+        "nodek": 158,
+        "nodel": 359
+    },
+    "111": {
+        "mat_id": 3,
+        "nodei": 158,
+        "nodej": 85,
+        "nodek": 159,
+        "nodel": 359
+    },
+    "112": {
+        "mat_id": 3,
+        "nodei": 162,
+        "nodej": 85,
+        "nodek": 158,
+        "nodel": 360
+    },
+    "113": {
+        "mat_id": 3,
+        "nodei": 158,
+        "nodej": 20,
+        "nodek": 160,
+        "nodel": 360
+    },
+    "114": {
+        "mat_id": 3,
+        "nodei": 160,
+        "nodej": 541,
+        "nodek": 161,
+        "nodel": 360
+    },
+    "115": {
+        "mat_id": 3,
+        "nodei": 161,
+        "nodej": 127,
+        "nodek": 162,
+        "nodel": 360
+    },
+    "116": {
+        "mat_id": 3,
+        "nodei": 161,
+        "nodej": 541,
+        "nodek": 163,
+        "nodel": 361
+    },
+    "117": {
+        "mat_id": 3,
+        "nodei": 163,
+        "nodej": 24,
+        "nodek": 164,
+        "nodel": 361
+    },
+    "118": {
+        "mat_id": 3,
+        "nodei": 164,
+        "nodej": 88,
+        "nodek": 165,
+        "nodel": 361
+    },
+    "119": {
+        "mat_id": 3,
+        "nodei": 165,
+        "nodej": 127,
+        "nodek": 161,
+        "nodel": 361
+    },
+    "120": {
+        "mat_id": 3,
+        "nodei": 169,
+        "nodej": 24,
+        "nodek": 166,
+        "nodel": 362
+    },
+    "121": {
+        "mat_id": 3,
+        "nodei": 166,
+        "nodej": 458,
+        "nodek": 167,
+        "nodel": 362
+    },
+    "122": {
+        "mat_id": 3,
+        "nodei": 167,
+        "nodej": 128,
+        "nodek": 168,
+        "nodel": 362
+    },
+    "123": {
+        "mat_id": 3,
+        "nodei": 168,
+        "nodej": 91,
+        "nodek": 169,
+        "nodel": 362
+    },
+    "124": {
+        "mat_id": 3,
+        "nodei": 171,
+        "nodej": 24,
+        "nodek": 169,
+        "nodel": 363
+    },
+    "125": {
+        "mat_id": 3,
+        "nodei": 169,
+        "nodej": 91,
+        "nodek": 170,
+        "nodel": 363
+    },
+    "126": {
+        "mat_id": 3,
+        "nodei": 170,
+        "nodej": 90,
+        "nodek": 171,
+        "nodel": 363
+    },
+    "127": {
+        "mat_id": 3,
+        "nodei": 164,
+        "nodej": 24,
+        "nodek": 171,
+        "nodel": 364
+    },
+    "128": {
+        "mat_id": 3,
+        "nodei": 171,
+        "nodej": 90,
+        "nodek": 172,
+        "nodel": 364
+    },
+    "129": {
+        "mat_id": 3,
+        "nodei": 172,
+        "nodej": 88,
+        "nodek": 164,
+        "nodel": 364
+    },
+    "130": {
+        "mat_id": 3,
+        "nodei": 175,
+        "nodej": 128,
+        "nodek": 167,
+        "nodel": 365
+    },
+    "131": {
+        "mat_id": 3,
+        "nodei": 167,
+        "nodej": 458,
+        "nodek": 173,
+        "nodel": 365
+    },
+    "132": {
+        "mat_id": 3,
+        "nodei": 173,
+        "nodej": 28,
+        "nodek": 174,
+        "nodel": 365
+    },
+    "133": {
+        "mat_id": 3,
+        "nodei": 174,
+        "nodej": 95,
+        "nodek": 175,
+        "nodel": 365
+    },
+    "134": {
+        "mat_id": 3,
+        "nodei": 178,
+        "nodej": 95,
+        "nodek": 174,
+        "nodel": 366
+    },
+    "135": {
+        "mat_id": 3,
+        "nodei": 174,
+        "nodej": 28,
+        "nodek": 176,
+        "nodel": 366
+    },
+    "136": {
+        "mat_id": 3,
+        "nodei": 176,
+        "nodej": 553,
+        "nodek": 177,
+        "nodel": 366
+    },
+    "137": {
+        "mat_id": 3,
+        "nodei": 177,
+        "nodej": 129,
+        "nodek": 178,
+        "nodel": 366
+    },
+    "138": {
+        "mat_id": 3,
+        "nodei": 181,
+        "nodej": 98,
+        "nodek": 179,
+        "nodel": 367
+    },
+    "139": {
+        "mat_id": 3,
+        "nodei": 179,
+        "nodej": 32,
+        "nodek": 180,
+        "nodel": 367
+    },
+    "140": {
+        "mat_id": 3,
+        "nodei": 180,
+        "nodej": 100,
+        "nodek": 181,
+        "nodel": 367
+    },
+    "141": {
+        "mat_id": 3,
+        "nodei": 179,
+        "nodej": 98,
+        "nodek": 182,
+        "nodel": 368
+    },
+    "142": {
+        "mat_id": 3,
+        "nodei": 182,
+        "nodej": 129,
+        "nodek": 177,
+        "nodel": 368
+    },
+    "143": {
+        "mat_id": 3,
+        "nodei": 177,
+        "nodej": 553,
+        "nodek": 183,
+        "nodel": 368
+    },
+    "144": {
+        "mat_id": 3,
+        "nodei": 183,
+        "nodej": 32,
+        "nodek": 179,
+        "nodel": 368
+    },
+    "145": {
+        "mat_id": 3,
+        "nodei": 186,
+        "nodej": 100,
+        "nodek": 180,
+        "nodel": 369
+    },
+    "146": {
+        "mat_id": 3,
+        "nodei": 180,
+        "nodej": 32,
+        "nodek": 184,
+        "nodel": 369
+    },
+    "147": {
+        "mat_id": 3,
+        "nodei": 184,
+        "nodej": 552,
+        "nodek": 185,
+        "nodel": 369
+    },
+    "148": {
+        "mat_id": 3,
+        "nodei": 185,
+        "nodej": 130,
+        "nodek": 186,
+        "nodel": 369
+    },
+    "149": {
+        "mat_id": 3,
+        "nodei": 189,
+        "nodej": 103,
+        "nodek": 187,
+        "nodel": 370
+    },
+    "150": {
+        "mat_id": 3,
+        "nodei": 187,
+        "nodej": 36,
+        "nodek": 188,
+        "nodel": 370
+    },
+    "151": {
+        "mat_id": 3,
+        "nodei": 188,
+        "nodej": 105,
+        "nodek": 189,
+        "nodel": 370
+    },
+    "152": {
+        "mat_id": 3,
+        "nodei": 187,
+        "nodej": 103,
+        "nodek": 190,
+        "nodel": 371
+    },
+    "153": {
+        "mat_id": 3,
+        "nodei": 190,
+        "nodej": 130,
+        "nodek": 185,
+        "nodel": 371
+    },
+    "154": {
+        "mat_id": 3,
+        "nodei": 185,
+        "nodej": 552,
+        "nodek": 191,
+        "nodel": 371
+    },
+    "155": {
+        "mat_id": 3,
+        "nodei": 191,
+        "nodej": 36,
+        "nodek": 187,
+        "nodel": 371
+    },
+    "156": {
+        "mat_id": 3,
+        "nodei": 194,
+        "nodej": 105,
+        "nodek": 188,
+        "nodel": 372
+    },
+    "157": {
+        "mat_id": 3,
+        "nodei": 188,
+        "nodej": 36,
+        "nodek": 192,
+        "nodel": 372
+    },
+    "158": {
+        "mat_id": 3,
+        "nodei": 192,
+        "nodej": 542,
+        "nodek": 193,
+        "nodel": 372
+    },
+    "159": {
+        "mat_id": 3,
+        "nodei": 193,
+        "nodej": 131,
+        "nodek": 194,
+        "nodel": 372
+    },
+    "160": {
+        "mat_id": 3,
+        "nodei": 197,
+        "nodej": 108,
+        "nodek": 195,
+        "nodel": 373
+    },
+    "161": {
+        "mat_id": 3,
+        "nodei": 195,
+        "nodej": 40,
+        "nodek": 196,
+        "nodel": 373
+    },
+    "162": {
+        "mat_id": 3,
+        "nodei": 196,
+        "nodej": 110,
+        "nodek": 197,
+        "nodel": 373
+    },
+    "163": {
+        "mat_id": 3,
+        "nodei": 195,
+        "nodej": 108,
+        "nodek": 198,
+        "nodel": 374
+    },
+    "164": {
+        "mat_id": 3,
+        "nodei": 198,
+        "nodej": 131,
+        "nodek": 193,
+        "nodel": 374
+    },
+    "165": {
+        "mat_id": 3,
+        "nodei": 193,
+        "nodej": 542,
+        "nodek": 199,
+        "nodel": 374
+    },
+    "166": {
+        "mat_id": 3,
+        "nodei": 199,
+        "nodej": 40,
+        "nodek": 195,
+        "nodel": 374
+    },
+    "167": {
+        "mat_id": 3,
+        "nodei": 202,
+        "nodej": 40,
+        "nodek": 200,
+        "nodel": 375
+    },
+    "168": {
+        "mat_id": 3,
+        "nodei": 200,
+        "nodej": 554,
+        "nodek": 201,
+        "nodel": 375
+    },
+    "169": {
+        "mat_id": 3,
+        "nodei": 201,
+        "nodej": 111,
+        "nodek": 202,
+        "nodel": 375
+    },
+    "170": {
+        "mat_id": 3,
+        "nodei": 196,
+        "nodej": 40,
+        "nodek": 202,
+        "nodel": 376
+    },
+    "171": {
+        "mat_id": 3,
+        "nodei": 202,
+        "nodej": 111,
+        "nodek": 203,
+        "nodel": 376
+    },
+    "172": {
+        "mat_id": 3,
+        "nodei": 203,
+        "nodej": 110,
+        "nodek": 196,
+        "nodel": 376
+    },
+    "173": {
+        "mat_id": 3,
+        "nodei": 206,
+        "nodej": 554,
+        "nodek": 204,
+        "nodel": 377
+    },
+    "174": {
+        "mat_id": 3,
+        "nodei": 204,
+        "nodej": 44,
+        "nodek": 205,
+        "nodel": 377
+    },
+    "175": {
+        "mat_id": 3,
+        "nodei": 205,
+        "nodej": 115,
+        "nodek": 206,
+        "nodel": 377
+    },
+    "176": {
+        "mat_id": 3,
+        "nodei": 205,
+        "nodej": 44,
+        "nodek": 207,
+        "nodel": 378
+    },
+    "177": {
+        "mat_id": 3,
+        "nodei": 207,
+        "nodej": 543,
+        "nodek": 208,
+        "nodel": 378
+    },
+    "178": {
+        "mat_id": 3,
+        "nodei": 208,
+        "nodej": 132,
+        "nodek": 209,
+        "nodel": 378
+    },
+    "179": {
+        "mat_id": 3,
+        "nodei": 209,
+        "nodej": 115,
+        "nodek": 205,
+        "nodel": 378
+    },
+    "180": {
+        "mat_id": 3,
+        "nodei": 212,
+        "nodej": 543,
+        "nodek": 210,
+        "nodel": 379
+    },
+    "181": {
+        "mat_id": 3,
+        "nodei": 210,
+        "nodej": 48,
+        "nodek": 211,
+        "nodel": 379
+    },
+    "182": {
+        "mat_id": 3,
+        "nodei": 211,
+        "nodej": 118,
+        "nodek": 212,
+        "nodel": 379
+    },
+    "183": {
+        "mat_id": 3,
+        "nodei": 216,
+        "nodej": 48,
+        "nodek": 213,
+        "nodel": 380
+    },
+    "184": {
+        "mat_id": 3,
+        "nodei": 213,
+        "nodej": 562,
+        "nodek": 214,
+        "nodel": 380
+    },
+    "185": {
+        "mat_id": 3,
+        "nodei": 214,
+        "nodej": 133,
+        "nodek": 215,
+        "nodel": 380
+    },
+    "186": {
+        "mat_id": 3,
+        "nodei": 215,
+        "nodej": 121,
+        "nodek": 216,
+        "nodel": 380
+    },
+    "187": {
+        "mat_id": 3,
+        "nodei": 218,
+        "nodej": 48,
+        "nodek": 216,
+        "nodel": 381
+    },
+    "188": {
+        "mat_id": 3,
+        "nodei": 216,
+        "nodej": 121,
+        "nodek": 217,
+        "nodel": 381
+    },
+    "189": {
+        "mat_id": 3,
+        "nodei": 217,
+        "nodej": 119,
+        "nodek": 218,
+        "nodel": 381
+    },
+    "190": {
+        "mat_id": 3,
+        "nodei": 211,
+        "nodej": 48,
+        "nodek": 218,
+        "nodel": 382
+    },
+    "191": {
+        "mat_id": 3,
+        "nodei": 218,
+        "nodej": 119,
+        "nodek": 219,
+        "nodel": 382
+    },
+    "192": {
+        "mat_id": 3,
+        "nodei": 219,
+        "nodej": 118,
+        "nodek": 211,
+        "nodel": 382
+    },
+    "193": {
+        "mat_id": 3,
+        "nodei": 222,
+        "nodej": 133,
+        "nodek": 214,
+        "nodel": 383
+    },
+    "194": {
+        "mat_id": 3,
+        "nodei": 214,
+        "nodej": 562,
+        "nodek": 220,
+        "nodel": 383
+    },
+    "195": {
+        "mat_id": 3,
+        "nodei": 220,
+        "nodej": 52,
+        "nodek": 221,
+        "nodel": 383
+    },
+    "196": {
+        "mat_id": 3,
+        "nodei": 221,
+        "nodej": 125,
+        "nodek": 222,
+        "nodel": 383
+    },
+    "197": {
+        "mat_id": 3,
+        "nodei": 225,
+        "nodej": 125,
+        "nodek": 221,
+        "nodel": 384
+    },
+    "198": {
+        "mat_id": 3,
+        "nodei": 221,
+        "nodej": 52,
+        "nodek": 223,
+        "nodel": 384
+    },
+    "199": {
+        "mat_id": 3,
+        "nodei": 223,
+        "nodej": 57,
+        "nodek": 224,
+        "nodel": 384
+    },
+    "200": {
+        "mat_id": 3,
+        "nodei": 224,
+        "nodej": 563,
+        "nodek": 225,
+        "nodel": 384
+    },
+    "201": {
+        "mat_id": 3,
+        "nodei": 228,
+        "nodej": 124,
+        "nodek": 226,
+        "nodel": 385
+    },
+    "202": {
+        "mat_id": 3,
+        "nodei": 226,
+        "nodej": 125,
+        "nodek": 225,
+        "nodel": 385
+    },
+    "203": {
+        "mat_id": 3,
+        "nodei": 225,
+        "nodej": 563,
+        "nodek": 227,
+        "nodel": 385
+    },
+    "204": {
+        "mat_id": 3,
+        "nodei": 227,
+        "nodej": 462,
+        "nodek": 228,
+        "nodel": 385
+    },
+    "205": {
+        "mat_id": 3,
+        "nodei": 231,
+        "nodej": 53,
+        "nodek": 229,
+        "nodel": 386
+    },
+    "206": {
+        "mat_id": 3,
+        "nodei": 229,
+        "nodej": 124,
+        "nodek": 228,
+        "nodel": 386
+    },
+    "207": {
+        "mat_id": 3,
+        "nodei": 228,
+        "nodej": 462,
+        "nodek": 230,
+        "nodel": 386
+    },
+    "208": {
+        "mat_id": 3,
+        "nodei": 230,
+        "nodej": 60,
+        "nodek": 231,
+        "nodel": 386
+    },
+    "209": {
+        "mat_id": 3,
+        "nodei": 233,
+        "nodej": 124,
+        "nodek": 229,
+        "nodel": 387
+    },
+    "210": {
+        "mat_id": 3,
+        "nodei": 229,
+        "nodej": 53,
+        "nodek": 232,
+        "nodel": 387
+    },
+    "211": {
+        "mat_id": 3,
+        "nodei": 232,
+        "nodej": 123,
+        "nodek": 233,
+        "nodel": 387
+    },
+    "212": {
+        "mat_id": 3,
+        "nodei": 232,
+        "nodej": 53,
+        "nodek": 234,
+        "nodel": 388
+    },
+    "213": {
+        "mat_id": 3,
+        "nodei": 234,
+        "nodej": 572,
+        "nodek": 235,
+        "nodel": 388
+    },
+    "214": {
+        "mat_id": 3,
+        "nodei": 235,
+        "nodej": 134,
+        "nodek": 236,
+        "nodel": 388
+    },
+    "215": {
+        "mat_id": 3,
+        "nodei": 236,
+        "nodej": 123,
+        "nodek": 232,
+        "nodel": 388
+    },
+    "216": {
+        "mat_id": 3,
+        "nodei": 239,
+        "nodej": 49,
+        "nodek": 237,
+        "nodel": 389
+    },
+    "217": {
+        "mat_id": 3,
+        "nodei": 237,
+        "nodej": 120,
+        "nodek": 238,
+        "nodel": 389
+    },
+    "218": {
+        "mat_id": 3,
+        "nodei": 238,
+        "nodej": 134,
+        "nodek": 235,
+        "nodel": 389
+    },
+    "219": {
+        "mat_id": 3,
+        "nodei": 235,
+        "nodej": 572,
+        "nodek": 239,
+        "nodel": 389
+    },
+    "220": {
+        "mat_id": 3,
+        "nodei": 242,
+        "nodej": 557,
+        "nodek": 240,
+        "nodel": 390
+    },
+    "221": {
+        "mat_id": 3,
+        "nodei": 240,
+        "nodej": 135,
+        "nodek": 241,
+        "nodel": 390
+    },
+    "222": {
+        "mat_id": 3,
+        "nodei": 241,
+        "nodej": 120,
+        "nodek": 237,
+        "nodel": 390
+    },
+    "223": {
+        "mat_id": 3,
+        "nodei": 237,
+        "nodej": 49,
+        "nodek": 242,
+        "nodel": 390
+    },
+    "224": {
+        "mat_id": 3,
+        "nodei": 240,
+        "nodej": 557,
+        "nodek": 243,
+        "nodel": 391
+    },
+    "225": {
+        "mat_id": 3,
+        "nodei": 243,
+        "nodej": 45,
+        "nodek": 244,
+        "nodel": 391
+    },
+    "226": {
+        "mat_id": 3,
+        "nodei": 244,
+        "nodej": 116,
+        "nodek": 245,
+        "nodel": 391
+    },
+    "227": {
+        "mat_id": 3,
+        "nodei": 245,
+        "nodej": 135,
+        "nodek": 240,
+        "nodel": 391
+    },
+    "228": {
+        "mat_id": 3,
+        "nodei": 249,
+        "nodej": 45,
+        "nodek": 246,
+        "nodel": 392
+    },
+    "229": {
+        "mat_id": 3,
+        "nodei": 246,
+        "nodej": 483,
+        "nodek": 247,
+        "nodel": 392
+    },
+    "230": {
+        "mat_id": 3,
+        "nodei": 247,
+        "nodej": 136,
+        "nodek": 248,
+        "nodel": 392
+    },
+    "231": {
+        "mat_id": 3,
+        "nodei": 248,
+        "nodej": 113,
+        "nodek": 249,
+        "nodel": 392
+    },
+    "232": {
+        "mat_id": 3,
+        "nodei": 251,
+        "nodej": 45,
+        "nodek": 249,
+        "nodel": 393
+    },
+    "233": {
+        "mat_id": 3,
+        "nodei": 249,
+        "nodej": 113,
+        "nodek": 250,
+        "nodel": 393
+    },
+    "234": {
+        "mat_id": 3,
+        "nodei": 250,
+        "nodej": 114,
+        "nodek": 251,
+        "nodel": 393
+    },
+    "235": {
+        "mat_id": 3,
+        "nodei": 244,
+        "nodej": 45,
+        "nodek": 251,
+        "nodel": 394
+    },
+    "236": {
+        "mat_id": 3,
+        "nodei": 251,
+        "nodej": 114,
+        "nodek": 252,
+        "nodel": 394
+    },
+    "237": {
+        "mat_id": 3,
+        "nodei": 252,
+        "nodej": 116,
+        "nodek": 244,
+        "nodel": 394
+    },
+    "238": {
+        "mat_id": 3,
+        "nodei": 255,
+        "nodej": 41,
+        "nodek": 253,
+        "nodel": 395
+    },
+    "239": {
+        "mat_id": 3,
+        "nodei": 253,
+        "nodej": 109,
+        "nodek": 254,
+        "nodel": 395
+    },
+    "240": {
+        "mat_id": 3,
+        "nodei": 254,
+        "nodej": 136,
+        "nodek": 247,
+        "nodel": 395
+    },
+    "241": {
+        "mat_id": 3,
+        "nodei": 247,
+        "nodej": 483,
+        "nodek": 255,
+        "nodel": 395
+    },
+    "242": {
+        "mat_id": 3,
+        "nodei": 258,
+        "nodej": 487,
+        "nodek": 256,
+        "nodel": 396
+    },
+    "243": {
+        "mat_id": 3,
+        "nodei": 256,
+        "nodej": 137,
+        "nodek": 257,
+        "nodel": 396
+    },
+    "244": {
+        "mat_id": 3,
+        "nodei": 257,
+        "nodej": 109,
+        "nodek": 253,
+        "nodel": 396
+    },
+    "245": {
+        "mat_id": 3,
+        "nodei": 253,
+        "nodej": 41,
+        "nodek": 258,
+        "nodel": 396
+    },
+    "246": {
+        "mat_id": 3,
+        "nodei": 261,
+        "nodej": 106,
+        "nodek": 259,
+        "nodel": 397
+    },
+    "247": {
+        "mat_id": 3,
+        "nodei": 259,
+        "nodej": 37,
+        "nodek": 260,
+        "nodel": 397
+    },
+    "248": {
+        "mat_id": 3,
+        "nodei": 260,
+        "nodej": 104,
+        "nodek": 261,
+        "nodel": 397
+    },
+    "249": {
+        "mat_id": 3,
+        "nodei": 259,
+        "nodej": 106,
+        "nodek": 262,
+        "nodel": 398
+    },
+    "250": {
+        "mat_id": 3,
+        "nodei": 262,
+        "nodej": 137,
+        "nodek": 256,
+        "nodel": 398
+    },
+    "251": {
+        "mat_id": 3,
+        "nodei": 256,
+        "nodej": 487,
+        "nodek": 263,
+        "nodel": 398
+    },
+    "252": {
+        "mat_id": 3,
+        "nodei": 263,
+        "nodej": 37,
+        "nodek": 259,
+        "nodel": 398
+    },
+    "253": {
+        "mat_id": 3,
+        "nodei": 266,
+        "nodej": 69,
+        "nodek": 264,
+        "nodel": 399
+    },
+    "254": {
+        "mat_id": 3,
+        "nodei": 264,
+        "nodej": 138,
+        "nodek": 265,
+        "nodel": 399
+    },
+    "255": {
+        "mat_id": 3,
+        "nodei": 265,
+        "nodej": 104,
+        "nodek": 260,
+        "nodel": 399
+    },
+    "256": {
+        "mat_id": 3,
+        "nodei": 260,
+        "nodej": 37,
+        "nodek": 266,
+        "nodel": 399
+    },
+    "257": {
+        "mat_id": 3,
+        "nodei": 269,
+        "nodej": 101,
+        "nodek": 267,
+        "nodel": 400
+    },
+    "258": {
+        "mat_id": 3,
+        "nodei": 267,
+        "nodej": 33,
+        "nodek": 268,
+        "nodel": 400
+    },
+    "259": {
+        "mat_id": 3,
+        "nodei": 268,
+        "nodej": 99,
+        "nodek": 269,
+        "nodel": 400
+    },
+    "260": {
+        "mat_id": 3,
+        "nodei": 267,
+        "nodej": 101,
+        "nodek": 270,
+        "nodel": 401
+    },
+    "261": {
+        "mat_id": 3,
+        "nodei": 270,
+        "nodej": 138,
+        "nodek": 264,
+        "nodel": 401
+    },
+    "262": {
+        "mat_id": 3,
+        "nodei": 264,
+        "nodej": 69,
+        "nodek": 271,
+        "nodel": 401
+    },
+    "263": {
+        "mat_id": 3,
+        "nodei": 271,
+        "nodej": 33,
+        "nodek": 267,
+        "nodel": 401
+    },
+    "264": {
+        "mat_id": 3,
+        "nodei": 274,
+        "nodej": 71,
+        "nodek": 272,
+        "nodel": 402
+    },
+    "265": {
+        "mat_id": 3,
+        "nodei": 272,
+        "nodej": 139,
+        "nodek": 273,
+        "nodel": 402
+    },
+    "266": {
+        "mat_id": 3,
+        "nodei": 273,
+        "nodej": 99,
+        "nodek": 268,
+        "nodel": 402
+    },
+    "267": {
+        "mat_id": 3,
+        "nodei": 268,
+        "nodej": 33,
+        "nodek": 274,
+        "nodel": 402
+    },
+    "268": {
+        "mat_id": 3,
+        "nodei": 277,
+        "nodej": 96,
+        "nodek": 275,
+        "nodel": 403
+    },
+    "269": {
+        "mat_id": 3,
+        "nodei": 275,
+        "nodej": 29,
+        "nodek": 276,
+        "nodel": 403
+    },
+    "270": {
+        "mat_id": 3,
+        "nodei": 276,
+        "nodej": 94,
+        "nodek": 277,
+        "nodel": 403
+    },
+    "271": {
+        "mat_id": 3,
+        "nodei": 275,
+        "nodej": 96,
+        "nodek": 278,
+        "nodel": 404
+    },
+    "272": {
+        "mat_id": 3,
+        "nodei": 278,
+        "nodej": 139,
+        "nodek": 272,
+        "nodel": 404
+    },
+    "273": {
+        "mat_id": 3,
+        "nodei": 272,
+        "nodej": 71,
+        "nodek": 279,
+        "nodel": 404
+    },
+    "274": {
+        "mat_id": 3,
+        "nodei": 279,
+        "nodej": 29,
+        "nodek": 275,
+        "nodel": 404
+    },
+    "275": {
+        "mat_id": 3,
+        "nodei": 282,
+        "nodej": 29,
+        "nodek": 280,
+        "nodel": 405
+    },
+    "276": {
+        "mat_id": 3,
+        "nodei": 280,
+        "nodej": 73,
+        "nodek": 281,
+        "nodel": 405
+    },
+    "277": {
+        "mat_id": 3,
+        "nodei": 281,
+        "nodej": 93,
+        "nodek": 282,
+        "nodel": 405
+    },
+    "278": {
+        "mat_id": 3,
+        "nodei": 276,
+        "nodej": 29,
+        "nodek": 282,
+        "nodel": 406
+    },
+    "279": {
+        "mat_id": 3,
+        "nodei": 282,
+        "nodej": 93,
+        "nodek": 283,
+        "nodel": 406
+    },
+    "280": {
+        "mat_id": 3,
+        "nodei": 283,
+        "nodej": 94,
+        "nodek": 276,
+        "nodel": 406
+    },
+    "281": {
+        "mat_id": 3,
+        "nodei": 286,
+        "nodej": 73,
+        "nodek": 284,
+        "nodel": 407
+    },
+    "282": {
+        "mat_id": 3,
+        "nodei": 284,
+        "nodej": 25,
+        "nodek": 285,
+        "nodel": 407
+    },
+    "283": {
+        "mat_id": 3,
+        "nodei": 285,
+        "nodej": 89,
+        "nodek": 286,
+        "nodel": 407
+    },
+    "284": {
+        "mat_id": 3,
+        "nodei": 285,
+        "nodej": 25,
+        "nodek": 287,
+        "nodel": 408
+    },
+    "285": {
+        "mat_id": 3,
+        "nodei": 287,
+        "nodej": 75,
+        "nodek": 288,
+        "nodel": 408
+    },
+    "286": {
+        "mat_id": 3,
+        "nodei": 288,
+        "nodej": 140,
+        "nodek": 289,
+        "nodel": 408
+    },
+    "287": {
+        "mat_id": 3,
+        "nodei": 289,
+        "nodej": 89,
+        "nodek": 285,
+        "nodel": 408
+    },
+    "288": {
+        "mat_id": 3,
+        "nodei": 292,
+        "nodej": 75,
+        "nodek": 290,
+        "nodel": 409
+    },
+    "289": {
+        "mat_id": 3,
+        "nodei": 290,
+        "nodej": 21,
+        "nodek": 291,
+        "nodel": 409
+    },
+    "290": {
+        "mat_id": 3,
+        "nodei": 291,
+        "nodej": 86,
+        "nodek": 292,
+        "nodel": 409
+    },
+    "291": {
+        "mat_id": 3,
+        "nodei": 296,
+        "nodej": 21,
+        "nodek": 293,
+        "nodel": 410
+    },
+    "292": {
+        "mat_id": 3,
+        "nodei": 293,
+        "nodej": 77,
+        "nodek": 294,
+        "nodel": 410
+    },
+    "293": {
+        "mat_id": 3,
+        "nodei": 294,
+        "nodej": 141,
+        "nodek": 295,
+        "nodel": 410
+    },
+    "294": {
+        "mat_id": 3,
+        "nodei": 295,
+        "nodej": 83,
+        "nodek": 296,
+        "nodel": 410
+    },
+    "295": {
+        "mat_id": 3,
+        "nodei": 298,
+        "nodej": 21,
+        "nodek": 296,
+        "nodel": 411
+    },
+    "296": {
+        "mat_id": 3,
+        "nodei": 296,
+        "nodej": 83,
+        "nodek": 297,
+        "nodel": 411
+    },
+    "297": {
+        "mat_id": 3,
+        "nodei": 297,
+        "nodej": 84,
+        "nodek": 298,
+        "nodel": 411
+    },
+    "298": {
+        "mat_id": 3,
+        "nodei": 291,
+        "nodej": 21,
+        "nodek": 298,
+        "nodel": 412
+    },
+    "299": {
+        "mat_id": 3,
+        "nodei": 298,
+        "nodej": 84,
+        "nodek": 299,
+        "nodel": 412
+    },
+    "300": {
+        "mat_id": 3,
+        "nodei": 299,
+        "nodej": 86,
+        "nodek": 291,
+        "nodel": 412
+    },
+    "301": {
+        "mat_id": 3,
+        "nodei": 301,
+        "nodej": 17,
+        "nodek": 144,
+        "nodel": 413
+    },
+    "302": {
+        "mat_id": 3,
+        "nodei": 144,
+        "nodej": 79,
+        "nodek": 300,
+        "nodel": 413
+    },
+    "303": {
+        "mat_id": 3,
+        "nodei": 300,
+        "nodej": 141,
+        "nodek": 294,
+        "nodel": 413
+    },
+    "304": {
+        "mat_id": 3,
+        "nodei": 294,
+        "nodej": 77,
+        "nodek": 301,
+        "nodel": 413
+    },
+    "305": {
+        "mat_id": 3,
+        "nodei": 156,
+        "nodej": 126,
+        "nodek": 302,
+        "nodel": 414
+    },
+    "306": {
+        "mat_id": 3,
+        "nodei": 302,
+        "nodej": 82,
+        "nodek": 303,
+        "nodel": 414
+    },
+    "307": {
+        "mat_id": 3,
+        "nodei": 303,
+        "nodej": 81,
+        "nodek": 156,
+        "nodel": 414
+    },
+    "308": {
+        "mat_id": 3,
+        "nodei": 305,
+        "nodej": 82,
+        "nodek": 302,
+        "nodel": 415
+    },
+    "309": {
+        "mat_id": 3,
+        "nodei": 302,
+        "nodej": 126,
+        "nodek": 159,
+        "nodel": 415
+    },
+    "310": {
+        "mat_id": 3,
+        "nodei": 159,
+        "nodej": 85,
+        "nodek": 304,
+        "nodel": 415
+    },
+    "311": {
+        "mat_id": 3,
+        "nodei": 304,
+        "nodej": 83,
+        "nodek": 305,
+        "nodel": 415
+    },
+    "312": {
+        "mat_id": 3,
+        "nodei": 297,
+        "nodej": 83,
+        "nodek": 304,
+        "nodel": 416
+    },
+    "313": {
+        "mat_id": 3,
+        "nodei": 304,
+        "nodej": 85,
+        "nodek": 306,
+        "nodel": 416
+    },
+    "314": {
+        "mat_id": 3,
+        "nodei": 306,
+        "nodej": 84,
+        "nodek": 297,
+        "nodel": 416
+    },
+    "315": {
+        "mat_id": 3,
+        "nodei": 306,
+        "nodej": 85,
+        "nodek": 162,
+        "nodel": 417
+    },
+    "316": {
+        "mat_id": 3,
+        "nodei": 162,
+        "nodej": 127,
+        "nodek": 307,
+        "nodel": 417
+    },
+    "317": {
+        "mat_id": 3,
+        "nodei": 307,
+        "nodej": 86,
+        "nodek": 299,
+        "nodel": 417
+    },
+    "318": {
+        "mat_id": 3,
+        "nodei": 299,
+        "nodej": 84,
+        "nodek": 306,
+        "nodel": 417
+    },
+    "319": {
+        "mat_id": 3,
+        "nodei": 309,
+        "nodej": 127,
+        "nodek": 165,
+        "nodel": 418
+    },
+    "320": {
+        "mat_id": 3,
+        "nodei": 165,
+        "nodej": 88,
+        "nodek": 308,
+        "nodel": 418
+    },
+    "321": {
+        "mat_id": 3,
+        "nodei": 308,
+        "nodej": 87,
+        "nodek": 309,
+        "nodel": 418
+    },
+    "322": {
+        "mat_id": 3,
+        "nodei": 308,
+        "nodej": 88,
+        "nodek": 310,
+        "nodel": 419
+    },
+    "323": {
+        "mat_id": 3,
+        "nodei": 310,
+        "nodej": 140,
+        "nodek": 311,
+        "nodel": 419
+    },
+    "324": {
+        "mat_id": 3,
+        "nodei": 311,
+        "nodej": 87,
+        "nodek": 308,
+        "nodel": 419
+    },
+    "325": {
+        "mat_id": 3,
+        "nodei": 312,
+        "nodej": 86,
+        "nodek": 307,
+        "nodel": 420
+    },
+    "326": {
+        "mat_id": 3,
+        "nodei": 307,
+        "nodej": 127,
+        "nodek": 309,
+        "nodel": 420
+    },
+    "327": {
+        "mat_id": 3,
+        "nodei": 309,
+        "nodej": 87,
+        "nodek": 312,
+        "nodel": 420
+    },
+    "328": {
+        "mat_id": 3,
+        "nodei": 314,
+        "nodej": 91,
+        "nodek": 168,
+        "nodel": 421
+    },
+    "329": {
+        "mat_id": 3,
+        "nodei": 168,
+        "nodej": 128,
+        "nodek": 313,
+        "nodel": 421
+    },
+    "330": {
+        "mat_id": 3,
+        "nodei": 313,
+        "nodej": 92,
+        "nodek": 314,
+        "nodel": 421
+    },
+    "331": {
+        "mat_id": 3,
+        "nodei": 313,
+        "nodej": 128,
+        "nodek": 315,
+        "nodel": 422
+    },
+    "332": {
+        "mat_id": 3,
+        "nodei": 315,
+        "nodej": 93,
+        "nodek": 316,
+        "nodel": 422
+    },
+    "333": {
+        "mat_id": 3,
+        "nodei": 316,
+        "nodej": 92,
+        "nodek": 313,
+        "nodel": 422
+    },
+    "334": {
+        "mat_id": 3,
+        "nodei": 317,
+        "nodej": 89,
+        "nodek": 289,
+        "nodel": 423
+    },
+    "335": {
+        "mat_id": 3,
+        "nodei": 289,
+        "nodej": 140,
+        "nodek": 310,
+        "nodel": 423
+    },
+    "336": {
+        "mat_id": 3,
+        "nodei": 310,
+        "nodej": 88,
+        "nodek": 172,
+        "nodel": 423
+    },
+    "337": {
+        "mat_id": 3,
+        "nodei": 172,
+        "nodej": 90,
+        "nodek": 317,
+        "nodel": 423
+    },
+    "338": {
+        "mat_id": 3,
+        "nodei": 283,
+        "nodej": 93,
+        "nodek": 315,
+        "nodel": 424
+    },
+    "339": {
+        "mat_id": 3,
+        "nodei": 315,
+        "nodej": 128,
+        "nodek": 175,
+        "nodel": 424
+    },
+    "340": {
+        "mat_id": 3,
+        "nodei": 175,
+        "nodej": 95,
+        "nodek": 318,
+        "nodel": 424
+    },
+    "341": {
+        "mat_id": 3,
+        "nodei": 318,
+        "nodej": 94,
+        "nodek": 283,
+        "nodel": 424
+    },
+    "342": {
+        "mat_id": 3,
+        "nodei": 254,
+        "nodej": 109,
+        "nodek": 319,
+        "nodel": 425
+    },
+    "343": {
+        "mat_id": 3,
+        "nodei": 319,
+        "nodej": 110,
+        "nodek": 203,
+        "nodel": 425
+    },
+    "344": {
+        "mat_id": 3,
+        "nodei": 203,
+        "nodej": 111,
+        "nodek": 320,
+        "nodel": 425
+    },
+    "345": {
+        "mat_id": 3,
+        "nodei": 320,
+        "nodej": 136,
+        "nodek": 254,
+        "nodel": 425
+    },
+    "346": {
+        "mat_id": 3,
+        "nodei": 322,
+        "nodej": 136,
+        "nodek": 320,
+        "nodel": 426
+    },
+    "347": {
+        "mat_id": 3,
+        "nodei": 320,
+        "nodej": 111,
+        "nodek": 321,
+        "nodel": 426
+    },
+    "348": {
+        "mat_id": 3,
+        "nodei": 321,
+        "nodej": 112,
+        "nodek": 322,
+        "nodel": 426
+    },
+    "349": {
+        "mat_id": 3,
+        "nodei": 323,
+        "nodej": 113,
+        "nodek": 248,
+        "nodel": 427
+    },
+    "350": {
+        "mat_id": 3,
+        "nodei": 248,
+        "nodej": 136,
+        "nodek": 322,
+        "nodel": 427
+    },
+    "351": {
+        "mat_id": 3,
+        "nodei": 322,
+        "nodej": 112,
+        "nodek": 323,
+        "nodel": 427
+    },
+    "352": {
+        "mat_id": 3,
+        "nodei": 325,
+        "nodej": 115,
+        "nodek": 209,
+        "nodel": 428
+    },
+    "353": {
+        "mat_id": 3,
+        "nodei": 209,
+        "nodej": 132,
+        "nodek": 324,
+        "nodel": 428
+    },
+    "354": {
+        "mat_id": 3,
+        "nodei": 324,
+        "nodej": 116,
+        "nodek": 252,
+        "nodel": 428
+    },
+    "355": {
+        "mat_id": 3,
+        "nodei": 252,
+        "nodej": 114,
+        "nodek": 325,
+        "nodel": 428
+    },
+    "356": {
+        "mat_id": 3,
+        "nodei": 328,
+        "nodej": 122,
+        "nodek": 326,
+        "nodel": 429
+    },
+    "357": {
+        "mat_id": 3,
+        "nodei": 326,
+        "nodej": 134,
+        "nodek": 238,
+        "nodel": 429
+    },
+    "358": {
+        "mat_id": 3,
+        "nodei": 238,
+        "nodej": 120,
+        "nodek": 327,
+        "nodel": 429
+    },
+    "359": {
+        "mat_id": 3,
+        "nodei": 327,
+        "nodej": 121,
+        "nodek": 328,
+        "nodel": 429
+    },
+    "360": {
+        "mat_id": 3,
+        "nodei": 331,
+        "nodej": 118,
+        "nodek": 329,
+        "nodel": 430
+    },
+    "361": {
+        "mat_id": 3,
+        "nodei": 329,
+        "nodej": 135,
+        "nodek": 330,
+        "nodel": 430
+    },
+    "362": {
+        "mat_id": 3,
+        "nodei": 330,
+        "nodej": 117,
+        "nodek": 331,
+        "nodel": 430
+    },
+    "363": {
+        "mat_id": 3,
+        "nodei": 330,
+        "nodej": 135,
+        "nodek": 245,
+        "nodel": 431
+    },
+    "364": {
+        "mat_id": 3,
+        "nodei": 245,
+        "nodej": 116,
+        "nodek": 332,
+        "nodel": 431
+    },
+    "365": {
+        "mat_id": 3,
+        "nodei": 332,
+        "nodej": 117,
+        "nodek": 330,
+        "nodel": 431
+    },
+    "366": {
+        "mat_id": 3,
+        "nodei": 332,
+        "nodej": 116,
+        "nodek": 324,
+        "nodel": 432
+    },
+    "367": {
+        "mat_id": 3,
+        "nodei": 324,
+        "nodej": 132,
+        "nodek": 333,
+        "nodel": 432
+    },
+    "368": {
+        "mat_id": 3,
+        "nodei": 333,
+        "nodej": 117,
+        "nodek": 332,
+        "nodel": 432
+    },
+    "369": {
+        "mat_id": 3,
+        "nodei": 217,
+        "nodej": 121,
+        "nodek": 327,
+        "nodel": 433
+    },
+    "370": {
+        "mat_id": 3,
+        "nodei": 327,
+        "nodej": 120,
+        "nodek": 334,
+        "nodel": 433
+    },
+    "371": {
+        "mat_id": 3,
+        "nodei": 334,
+        "nodej": 119,
+        "nodek": 217,
+        "nodel": 433
+    },
+    "372": {
+        "mat_id": 3,
+        "nodei": 334,
+        "nodej": 120,
+        "nodek": 241,
+        "nodel": 434
+    },
+    "373": {
+        "mat_id": 3,
+        "nodei": 241,
+        "nodej": 135,
+        "nodek": 329,
+        "nodel": 434
+    },
+    "374": {
+        "mat_id": 3,
+        "nodei": 329,
+        "nodej": 118,
+        "nodek": 219,
+        "nodel": 434
+    },
+    "375": {
+        "mat_id": 3,
+        "nodei": 219,
+        "nodej": 119,
+        "nodek": 334,
+        "nodel": 434
+    },
+    "376": {
+        "mat_id": 3,
+        "nodei": 326,
+        "nodej": 122,
+        "nodek": 335,
+        "nodel": 435
+    },
+    "377": {
+        "mat_id": 3,
+        "nodei": 335,
+        "nodej": 123,
+        "nodek": 236,
+        "nodel": 435
+    },
+    "378": {
+        "mat_id": 3,
+        "nodei": 236,
+        "nodej": 134,
+        "nodek": 326,
+        "nodel": 435
+    },
+    "379": {
+        "mat_id": 3,
+        "nodei": 336,
+        "nodej": 112,
+        "nodek": 321,
+        "nodel": 436
+    },
+    "380": {
+        "mat_id": 3,
+        "nodei": 321,
+        "nodej": 111,
+        "nodek": 201,
+        "nodel": 436
+    },
+    "381": {
+        "mat_id": 3,
+        "nodei": 201,
+        "nodej": 554,
+        "nodek": 206,
+        "nodel": 436
+    },
+    "382": {
+        "mat_id": 3,
+        "nodei": 206,
+        "nodej": 115,
+        "nodek": 336,
+        "nodel": 436
+    },
+    "383": {
+        "mat_id": 3,
+        "nodei": 331,
+        "nodej": 117,
+        "nodek": 333,
+        "nodel": 437
+    },
+    "384": {
+        "mat_id": 3,
+        "nodei": 333,
+        "nodej": 132,
+        "nodek": 208,
+        "nodel": 437
+    },
+    "385": {
+        "mat_id": 3,
+        "nodei": 208,
+        "nodej": 543,
+        "nodek": 212,
+        "nodel": 437
+    },
+    "386": {
+        "mat_id": 3,
+        "nodei": 212,
+        "nodej": 118,
+        "nodek": 331,
+        "nodel": 437
+    },
+    "387": {
+        "mat_id": 3,
+        "nodei": 337,
+        "nodej": 92,
+        "nodek": 316,
+        "nodel": 438
+    },
+    "388": {
+        "mat_id": 3,
+        "nodei": 316,
+        "nodej": 93,
+        "nodek": 281,
+        "nodel": 438
+    },
+    "389": {
+        "mat_id": 3,
+        "nodei": 281,
+        "nodej": 73,
+        "nodek": 286,
+        "nodel": 438
+    },
+    "390": {
+        "mat_id": 3,
+        "nodei": 286,
+        "nodej": 89,
+        "nodek": 337,
+        "nodel": 438
+    },
+    "391": {
+        "mat_id": 3,
+        "nodei": 312,
+        "nodej": 87,
+        "nodek": 311,
+        "nodel": 439
+    },
+    "392": {
+        "mat_id": 3,
+        "nodei": 311,
+        "nodej": 140,
+        "nodek": 288,
+        "nodel": 439
+    },
+    "393": {
+        "mat_id": 3,
+        "nodei": 288,
+        "nodej": 75,
+        "nodek": 292,
+        "nodel": 439
+    },
+    "394": {
+        "mat_id": 3,
+        "nodei": 292,
+        "nodej": 86,
+        "nodek": 312,
+        "nodel": 439
+    },
+    "395": {
+        "mat_id": 3,
+        "nodei": 303,
+        "nodej": 82,
+        "nodek": 338,
+        "nodel": 440
+    },
+    "396": {
+        "mat_id": 3,
+        "nodei": 338,
+        "nodej": 79,
+        "nodek": 148,
+        "nodel": 440
+    },
+    "397": {
+        "mat_id": 3,
+        "nodei": 148,
+        "nodej": 80,
+        "nodek": 153,
+        "nodel": 440
+    },
+    "398": {
+        "mat_id": 3,
+        "nodei": 153,
+        "nodej": 81,
+        "nodek": 303,
+        "nodel": 440
+    },
+    "399": {
+        "mat_id": 3,
+        "nodei": 305,
+        "nodej": 83,
+        "nodek": 295,
+        "nodel": 441
+    },
+    "400": {
+        "mat_id": 3,
+        "nodei": 295,
+        "nodej": 141,
+        "nodek": 300,
+        "nodel": 441
+    },
+    "401": {
+        "mat_id": 3,
+        "nodei": 300,
+        "nodej": 79,
+        "nodek": 338,
+        "nodel": 441
+    },
+    "402": {
+        "mat_id": 3,
+        "nodei": 338,
+        "nodej": 82,
+        "nodek": 305,
+        "nodel": 441
+    },
+    "403": {
+        "mat_id": 3,
+        "nodei": 317,
+        "nodej": 90,
+        "nodek": 170,
+        "nodel": 442
+    },
+    "404": {
+        "mat_id": 3,
+        "nodei": 170,
+        "nodej": 91,
+        "nodek": 314,
+        "nodel": 442
+    },
+    "405": {
+        "mat_id": 3,
+        "nodei": 314,
+        "nodej": 92,
+        "nodek": 337,
+        "nodel": 442
+    },
+    "406": {
+        "mat_id": 3,
+        "nodei": 337,
+        "nodej": 89,
+        "nodek": 317,
+        "nodel": 442
+    },
+    "407": {
+        "mat_id": 3,
+        "nodei": 340,
+        "nodej": 97,
+        "nodek": 339,
+        "nodel": 443
+    },
+    "408": {
+        "mat_id": 3,
+        "nodei": 339,
+        "nodej": 96,
+        "nodek": 277,
+        "nodel": 443
+    },
+    "409": {
+        "mat_id": 3,
+        "nodei": 277,
+        "nodej": 94,
+        "nodek": 318,
+        "nodel": 443
+    },
+    "410": {
+        "mat_id": 3,
+        "nodei": 318,
+        "nodej": 95,
+        "nodek": 340,
+        "nodel": 443
+    },
+    "411": {
+        "mat_id": 3,
+        "nodei": 343,
+        "nodej": 97,
+        "nodek": 341,
+        "nodel": 444
+    },
+    "412": {
+        "mat_id": 3,
+        "nodei": 341,
+        "nodej": 98,
+        "nodek": 181,
+        "nodel": 444
+    },
+    "413": {
+        "mat_id": 3,
+        "nodei": 181,
+        "nodej": 100,
+        "nodek": 342,
+        "nodel": 444
+    },
+    "414": {
+        "mat_id": 3,
+        "nodei": 342,
+        "nodej": 99,
+        "nodek": 343,
+        "nodel": 444
+    },
+    "415": {
+        "mat_id": 3,
+        "nodei": 278,
+        "nodej": 96,
+        "nodek": 339,
+        "nodel": 445
+    },
+    "416": {
+        "mat_id": 3,
+        "nodei": 339,
+        "nodej": 97,
+        "nodek": 343,
+        "nodel": 445
+    },
+    "417": {
+        "mat_id": 3,
+        "nodei": 343,
+        "nodej": 99,
+        "nodek": 273,
+        "nodel": 445
+    },
+    "418": {
+        "mat_id": 3,
+        "nodei": 273,
+        "nodej": 139,
+        "nodek": 278,
+        "nodel": 445
+    },
+    "419": {
+        "mat_id": 3,
+        "nodei": 182,
+        "nodej": 98,
+        "nodek": 341,
+        "nodel": 446
+    },
+    "420": {
+        "mat_id": 3,
+        "nodei": 341,
+        "nodej": 97,
+        "nodek": 340,
+        "nodel": 446
+    },
+    "421": {
+        "mat_id": 3,
+        "nodei": 340,
+        "nodej": 95,
+        "nodek": 178,
+        "nodel": 446
+    },
+    "422": {
+        "mat_id": 3,
+        "nodei": 178,
+        "nodej": 129,
+        "nodek": 182,
+        "nodel": 446
+    },
+    "423": {
+        "mat_id": 3,
+        "nodei": 269,
+        "nodej": 99,
+        "nodek": 342,
+        "nodel": 447
+    },
+    "424": {
+        "mat_id": 3,
+        "nodei": 342,
+        "nodej": 100,
+        "nodek": 344,
+        "nodel": 447
+    },
+    "425": {
+        "mat_id": 3,
+        "nodei": 344,
+        "nodej": 102,
+        "nodek": 345,
+        "nodel": 447
+    },
+    "426": {
+        "mat_id": 3,
+        "nodei": 345,
+        "nodej": 101,
+        "nodek": 269,
+        "nodel": 447
+    },
+    "427": {
+        "mat_id": 3,
+        "nodei": 189,
+        "nodej": 105,
+        "nodek": 346,
+        "nodel": 448
+    },
+    "428": {
+        "mat_id": 3,
+        "nodei": 346,
+        "nodej": 104,
+        "nodek": 347,
+        "nodel": 448
+    },
+    "429": {
+        "mat_id": 3,
+        "nodei": 347,
+        "nodej": 102,
+        "nodek": 348,
+        "nodel": 448
+    },
+    "430": {
+        "mat_id": 3,
+        "nodei": 348,
+        "nodej": 103,
+        "nodek": 189,
+        "nodel": 448
+    },
+    "431": {
+        "mat_id": 3,
+        "nodei": 347,
+        "nodej": 104,
+        "nodek": 265,
+        "nodel": 449
+    },
+    "432": {
+        "mat_id": 3,
+        "nodei": 265,
+        "nodej": 138,
+        "nodek": 270,
+        "nodel": 449
+    },
+    "433": {
+        "mat_id": 3,
+        "nodei": 270,
+        "nodej": 101,
+        "nodek": 345,
+        "nodel": 449
+    },
+    "434": {
+        "mat_id": 3,
+        "nodei": 345,
+        "nodej": 102,
+        "nodek": 347,
+        "nodel": 449
+    },
+    "435": {
+        "mat_id": 3,
+        "nodei": 344,
+        "nodej": 100,
+        "nodek": 186,
+        "nodel": 450
+    },
+    "436": {
+        "mat_id": 3,
+        "nodei": 186,
+        "nodej": 130,
+        "nodek": 190,
+        "nodel": 450
+    },
+    "437": {
+        "mat_id": 3,
+        "nodei": 190,
+        "nodej": 103,
+        "nodek": 348,
+        "nodel": 450
+    },
+    "438": {
+        "mat_id": 3,
+        "nodei": 348,
+        "nodej": 102,
+        "nodek": 344,
+        "nodel": 450
+    },
+    "439": {
+        "mat_id": 3,
+        "nodei": 261,
+        "nodej": 104,
+        "nodek": 346,
+        "nodel": 451
+    },
+    "440": {
+        "mat_id": 3,
+        "nodei": 346,
+        "nodej": 105,
+        "nodek": 349,
+        "nodel": 451
+    },
+    "441": {
+        "mat_id": 3,
+        "nodei": 349,
+        "nodej": 107,
+        "nodek": 350,
+        "nodel": 451
+    },
+    "442": {
+        "mat_id": 3,
+        "nodei": 350,
+        "nodej": 106,
+        "nodek": 261,
+        "nodel": 451
+    },
+    "443": {
+        "mat_id": 3,
+        "nodei": 352,
+        "nodej": 107,
+        "nodek": 351,
+        "nodel": 452
+    },
+    "444": {
+        "mat_id": 3,
+        "nodei": 351,
+        "nodej": 108,
+        "nodek": 197,
+        "nodel": 452
+    },
+    "445": {
+        "mat_id": 3,
+        "nodei": 197,
+        "nodej": 110,
+        "nodek": 319,
+        "nodel": 452
+    },
+    "446": {
+        "mat_id": 3,
+        "nodei": 319,
+        "nodej": 109,
+        "nodek": 352,
+        "nodel": 452
+    },
+    "447": {
+        "mat_id": 3,
+        "nodei": 262,
+        "nodej": 106,
+        "nodek": 350,
+        "nodel": 453
+    },
+    "448": {
+        "mat_id": 3,
+        "nodei": 350,
+        "nodej": 107,
+        "nodek": 352,
+        "nodel": 453
+    },
+    "449": {
+        "mat_id": 3,
+        "nodei": 352,
+        "nodej": 109,
+        "nodek": 257,
+        "nodel": 453
+    },
+    "450": {
+        "mat_id": 3,
+        "nodei": 257,
+        "nodej": 137,
+        "nodek": 262,
+        "nodel": 453
+    },
+    "451": {
+        "mat_id": 3,
+        "nodei": 198,
+        "nodej": 108,
+        "nodek": 351,
+        "nodel": 454
+    },
+    "452": {
+        "mat_id": 3,
+        "nodei": 351,
+        "nodej": 107,
+        "nodek": 349,
+        "nodel": 454
+    },
+    "453": {
+        "mat_id": 3,
+        "nodei": 349,
+        "nodej": 105,
+        "nodek": 194,
+        "nodel": 454
+    },
+    "454": {
+        "mat_id": 3,
+        "nodei": 194,
+        "nodej": 131,
+        "nodek": 198,
+        "nodel": 454
+    },
+    "455": {
+        "mat_id": 3,
+        "nodei": 325,
+        "nodej": 114,
+        "nodek": 250,
+        "nodel": 455
+    },
+    "456": {
+        "mat_id": 3,
+        "nodei": 250,
+        "nodej": 113,
+        "nodek": 323,
+        "nodel": 455
+    },
+    "457": {
+        "mat_id": 3,
+        "nodei": 323,
+        "nodej": 112,
+        "nodek": 336,
+        "nodel": 455
+    },
+    "458": {
+        "mat_id": 3,
+        "nodei": 336,
+        "nodej": 115,
+        "nodek": 325,
+        "nodel": 455
+    },
+    "459": {
+        "mat_id": 3,
+        "nodei": 226,
+        "nodej": 124,
+        "nodek": 233,
+        "nodel": 456
+    },
+    "460": {
+        "mat_id": 3,
+        "nodei": 233,
+        "nodej": 123,
+        "nodek": 335,
+        "nodel": 456
+    },
+    "461": {
+        "mat_id": 3,
+        "nodei": 335,
+        "nodej": 122,
+        "nodek": 353,
+        "nodel": 456
+    },
+    "462": {
+        "mat_id": 3,
+        "nodei": 353,
+        "nodej": 125,
+        "nodek": 226,
+        "nodel": 456
+    },
+    "463": {
+        "mat_id": 3,
+        "nodei": 328,
+        "nodej": 121,
+        "nodek": 215,
+        "nodel": 457
+    },
+    "464": {
+        "mat_id": 3,
+        "nodei": 215,
+        "nodej": 133,
+        "nodek": 222,
+        "nodel": 457
+    },
+    "465": {
+        "mat_id": 3,
+        "nodei": 222,
+        "nodej": 125,
+        "nodek": 353,
+        "nodel": 457
+    },
+    "466": {
+        "mat_id": 3,
+        "nodei": 353,
+        "nodej": 122,
+        "nodek": 328,
+        "nodel": 457
+    },
+    "467": {
+        "mat_id": 4,
+        "nodei": 544,
+        "nodej": 54,
+        "nodek": 555,
+        "nodel": 656
+    },
+    "468": {
+        "mat_id": 4,
+        "nodei": 555,
+        "nodej": 459,
+        "nodek": 605,
+        "nodel": 656
+    },
+    "469": {
+        "mat_id": 4,
+        "nodei": 605,
+        "nodej": 460,
+        "nodek": 606,
+        "nodel": 656
+    },
+    "470": {
+        "mat_id": 4,
+        "nodei": 606,
+        "nodej": 461,
+        "nodek": 544,
+        "nodel": 656
+    },
+    "471": {
+        "mat_id": 4,
+        "nodei": 605,
+        "nodej": 459,
+        "nodek": 556,
+        "nodel": 657
+    },
+    "472": {
+        "mat_id": 4,
+        "nodei": 556,
+        "nodej": 64,
+        "nodek": 564,
+        "nodel": 657
+    },
+    "473": {
+        "mat_id": 4,
+        "nodei": 564,
+        "nodej": 463,
+        "nodek": 607,
+        "nodel": 657
+    },
+    "474": {
+        "mat_id": 4,
+        "nodei": 607,
+        "nodej": 460,
+        "nodek": 605,
+        "nodel": 657
+    },
+    "475": {
+        "mat_id": 4,
+        "nodei": 545,
+        "nodej": 461,
+        "nodek": 606,
+        "nodel": 658
+    },
+    "476": {
+        "mat_id": 4,
+        "nodei": 606,
+        "nodej": 460,
+        "nodek": 608,
+        "nodel": 658
+    },
+    "477": {
+        "mat_id": 4,
+        "nodei": 608,
+        "nodej": 464,
+        "nodek": 609,
+        "nodel": 658
+    },
+    "478": {
+        "mat_id": 4,
+        "nodei": 609,
+        "nodej": 465,
+        "nodek": 545,
+        "nodel": 658
+    },
+    "479": {
+        "mat_id": 4,
+        "nodei": 608,
+        "nodej": 460,
+        "nodek": 607,
+        "nodel": 659
+    },
+    "480": {
+        "mat_id": 4,
+        "nodei": 607,
+        "nodej": 463,
+        "nodek": 565,
+        "nodel": 659
+    },
+    "481": {
+        "mat_id": 4,
+        "nodei": 565,
+        "nodej": 466,
+        "nodek": 610,
+        "nodel": 659
+    },
+    "482": {
+        "mat_id": 4,
+        "nodei": 610,
+        "nodej": 464,
+        "nodek": 608,
+        "nodel": 659
+    },
+    "483": {
+        "mat_id": 4,
+        "nodei": 546,
+        "nodej": 465,
+        "nodek": 609,
+        "nodel": 660
+    },
+    "484": {
+        "mat_id": 4,
+        "nodei": 609,
+        "nodej": 464,
+        "nodek": 611,
+        "nodel": 660
+    },
+    "485": {
+        "mat_id": 4,
+        "nodei": 611,
+        "nodej": 467,
+        "nodek": 612,
+        "nodel": 660
+    },
+    "486": {
+        "mat_id": 4,
+        "nodei": 612,
+        "nodej": 468,
+        "nodek": 546,
+        "nodel": 660
+    },
+    "487": {
+        "mat_id": 4,
+        "nodei": 611,
+        "nodej": 464,
+        "nodek": 610,
+        "nodel": 661
+    },
+    "488": {
+        "mat_id": 4,
+        "nodei": 610,
+        "nodej": 466,
+        "nodek": 566,
+        "nodel": 661
+    },
+    "489": {
+        "mat_id": 4,
+        "nodei": 566,
+        "nodej": 469,
+        "nodek": 613,
+        "nodel": 661
+    },
+    "490": {
+        "mat_id": 4,
+        "nodei": 613,
+        "nodej": 467,
+        "nodek": 611,
+        "nodel": 661
+    },
+    "491": {
+        "mat_id": 4,
+        "nodei": 547,
+        "nodej": 468,
+        "nodek": 612,
+        "nodel": 662
+    },
+    "492": {
+        "mat_id": 4,
+        "nodei": 612,
+        "nodej": 467,
+        "nodek": 614,
+        "nodel": 662
+    },
+    "493": {
+        "mat_id": 4,
+        "nodei": 614,
+        "nodej": 470,
+        "nodek": 615,
+        "nodel": 662
+    },
+    "494": {
+        "mat_id": 4,
+        "nodei": 615,
+        "nodej": 471,
+        "nodek": 547,
+        "nodel": 662
+    },
+    "495": {
+        "mat_id": 4,
+        "nodei": 614,
+        "nodej": 467,
+        "nodek": 613,
+        "nodel": 663
+    },
+    "496": {
+        "mat_id": 4,
+        "nodei": 613,
+        "nodej": 469,
+        "nodek": 567,
+        "nodel": 663
+    },
+    "497": {
+        "mat_id": 4,
+        "nodei": 567,
+        "nodej": 472,
+        "nodek": 616,
+        "nodel": 663
+    },
+    "498": {
+        "mat_id": 4,
+        "nodei": 616,
+        "nodej": 470,
+        "nodek": 614,
+        "nodel": 663
+    },
+    "499": {
+        "mat_id": 4,
+        "nodei": 548,
+        "nodej": 471,
+        "nodek": 615,
+        "nodel": 664
+    },
+    "500": {
+        "mat_id": 4,
+        "nodei": 615,
+        "nodej": 470,
+        "nodek": 617,
+        "nodel": 664
+    },
+    "501": {
+        "mat_id": 4,
+        "nodei": 617,
+        "nodej": 473,
+        "nodek": 618,
+        "nodel": 664
+    },
+    "502": {
+        "mat_id": 4,
+        "nodei": 618,
+        "nodej": 474,
+        "nodek": 548,
+        "nodel": 664
+    },
+    "503": {
+        "mat_id": 4,
+        "nodei": 617,
+        "nodej": 470,
+        "nodek": 616,
+        "nodel": 665
+    },
+    "504": {
+        "mat_id": 4,
+        "nodei": 616,
+        "nodej": 472,
+        "nodek": 568,
+        "nodel": 665
+    },
+    "505": {
+        "mat_id": 4,
+        "nodei": 568,
+        "nodej": 475,
+        "nodek": 619,
+        "nodel": 665
+    },
+    "506": {
+        "mat_id": 4,
+        "nodei": 619,
+        "nodej": 473,
+        "nodek": 617,
+        "nodel": 665
+    },
+    "507": {
+        "mat_id": 4,
+        "nodei": 549,
+        "nodej": 474,
+        "nodek": 618,
+        "nodel": 666
+    },
+    "508": {
+        "mat_id": 4,
+        "nodei": 618,
+        "nodej": 473,
+        "nodek": 620,
+        "nodel": 666
+    },
+    "509": {
+        "mat_id": 4,
+        "nodei": 620,
+        "nodej": 476,
+        "nodek": 621,
+        "nodel": 666
+    },
+    "510": {
+        "mat_id": 4,
+        "nodei": 621,
+        "nodej": 477,
+        "nodek": 549,
+        "nodel": 666
+    },
+    "511": {
+        "mat_id": 4,
+        "nodei": 620,
+        "nodej": 473,
+        "nodek": 619,
+        "nodel": 667
+    },
+    "512": {
+        "mat_id": 4,
+        "nodei": 619,
+        "nodej": 475,
+        "nodek": 569,
+        "nodel": 667
+    },
+    "513": {
+        "mat_id": 4,
+        "nodei": 569,
+        "nodej": 478,
+        "nodek": 622,
+        "nodel": 667
+    },
+    "514": {
+        "mat_id": 4,
+        "nodei": 622,
+        "nodej": 476,
+        "nodek": 620,
+        "nodel": 667
+    },
+    "515": {
+        "mat_id": 4,
+        "nodei": 550,
+        "nodej": 477,
+        "nodek": 621,
+        "nodel": 668
+    },
+    "516": {
+        "mat_id": 4,
+        "nodei": 621,
+        "nodej": 476,
+        "nodek": 623,
+        "nodel": 668
+    },
+    "517": {
+        "mat_id": 4,
+        "nodei": 623,
+        "nodej": 479,
+        "nodek": 624,
+        "nodel": 668
+    },
+    "518": {
+        "mat_id": 4,
+        "nodei": 624,
+        "nodej": 480,
+        "nodek": 550,
+        "nodel": 668
+    },
+    "519": {
+        "mat_id": 4,
+        "nodei": 623,
+        "nodej": 476,
+        "nodek": 622,
+        "nodel": 669
+    },
+    "520": {
+        "mat_id": 4,
+        "nodei": 622,
+        "nodej": 478,
+        "nodek": 570,
+        "nodel": 669
+    },
+    "521": {
+        "mat_id": 4,
+        "nodei": 570,
+        "nodej": 481,
+        "nodek": 625,
+        "nodel": 669
+    },
+    "522": {
+        "mat_id": 4,
+        "nodei": 625,
+        "nodej": 479,
+        "nodek": 623,
+        "nodel": 669
+    },
+    "523": {
+        "mat_id": 4,
+        "nodei": 551,
+        "nodej": 480,
+        "nodek": 624,
+        "nodel": 670
+    },
+    "524": {
+        "mat_id": 4,
+        "nodei": 624,
+        "nodej": 479,
+        "nodek": 626,
+        "nodel": 670
+    },
+    "525": {
+        "mat_id": 4,
+        "nodei": 626,
+        "nodej": 482,
+        "nodek": 558,
+        "nodel": 670
+    },
+    "526": {
+        "mat_id": 4,
+        "nodei": 558,
+        "nodej": 57,
+        "nodek": 551,
+        "nodel": 670
+    },
+    "527": {
+        "mat_id": 4,
+        "nodei": 626,
+        "nodej": 479,
+        "nodek": 625,
+        "nodel": 671
+    },
+    "528": {
+        "mat_id": 4,
+        "nodei": 625,
+        "nodej": 481,
+        "nodek": 571,
+        "nodel": 671
+    },
+    "529": {
+        "mat_id": 4,
+        "nodei": 571,
+        "nodej": 67,
+        "nodek": 559,
+        "nodel": 671
+    },
+    "530": {
+        "mat_id": 4,
+        "nodei": 559,
+        "nodej": 482,
+        "nodek": 626,
+        "nodel": 671
+    },
+    "531": {
+        "mat_id": 5,
+        "nodei": 560,
+        "nodej": 60,
+        "nodek": 230,
+        "nodel": 672
+    },
+    "532": {
+        "mat_id": 5,
+        "nodei": 230,
+        "nodej": 462,
+        "nodek": 627,
+        "nodel": 672
+    },
+    "533": {
+        "mat_id": 5,
+        "nodei": 627,
+        "nodej": 484,
+        "nodek": 628,
+        "nodel": 672
+    },
+    "534": {
+        "mat_id": 5,
+        "nodei": 628,
+        "nodej": 485,
+        "nodek": 560,
+        "nodel": 672
+    },
+    "535": {
+        "mat_id": 5,
+        "nodei": 561,
+        "nodej": 485,
+        "nodek": 628,
+        "nodel": 673
+    },
+    "536": {
+        "mat_id": 5,
+        "nodei": 628,
+        "nodej": 484,
+        "nodek": 629,
+        "nodel": 673
+    },
+    "537": {
+        "mat_id": 5,
+        "nodei": 629,
+        "nodej": 486,
+        "nodek": 573,
+        "nodel": 673
+    },
+    "538": {
+        "mat_id": 5,
+        "nodei": 573,
+        "nodej": 68,
+        "nodek": 561,
+        "nodel": 673
+    },
+    "539": {
+        "mat_id": 5,
+        "nodei": 627,
+        "nodej": 462,
+        "nodek": 227,
+        "nodel": 674
+    },
+    "540": {
+        "mat_id": 5,
+        "nodei": 227,
+        "nodej": 563,
+        "nodek": 630,
+        "nodel": 674
+    },
+    "541": {
+        "mat_id": 5,
+        "nodei": 630,
+        "nodej": 488,
+        "nodek": 631,
+        "nodel": 674
+    },
+    "542": {
+        "mat_id": 5,
+        "nodei": 631,
+        "nodej": 484,
+        "nodek": 627,
+        "nodel": 674
+    },
+    "543": {
+        "mat_id": 5,
+        "nodei": 629,
+        "nodej": 484,
+        "nodek": 631,
+        "nodel": 675
+    },
+    "544": {
+        "mat_id": 5,
+        "nodei": 631,
+        "nodej": 488,
+        "nodek": 632,
+        "nodel": 675
+    },
+    "545": {
+        "mat_id": 5,
+        "nodei": 632,
+        "nodej": 489,
+        "nodek": 574,
+        "nodel": 675
+    },
+    "546": {
+        "mat_id": 5,
+        "nodei": 574,
+        "nodej": 486,
+        "nodek": 629,
+        "nodel": 675
+    },
+    "547": {
+        "mat_id": 5,
+        "nodei": 630,
+        "nodej": 563,
+        "nodek": 224,
+        "nodel": 676
+    },
+    "548": {
+        "mat_id": 5,
+        "nodei": 224,
+        "nodej": 57,
+        "nodek": 558,
+        "nodel": 676
+    },
+    "549": {
+        "mat_id": 5,
+        "nodei": 558,
+        "nodej": 482,
+        "nodek": 633,
+        "nodel": 676
+    },
+    "550": {
+        "mat_id": 5,
+        "nodei": 633,
+        "nodej": 488,
+        "nodek": 630,
+        "nodel": 676
+    },
+    "551": {
+        "mat_id": 5,
+        "nodei": 632,
+        "nodej": 488,
+        "nodek": 633,
+        "nodel": 677
+    },
+    "552": {
+        "mat_id": 5,
+        "nodei": 633,
+        "nodej": 482,
+        "nodek": 559,
+        "nodel": 677
+    },
+    "553": {
+        "mat_id": 5,
+        "nodei": 559,
+        "nodej": 67,
+        "nodek": 575,
+        "nodel": 677
+    },
+    "554": {
+        "mat_id": 5,
+        "nodei": 575,
+        "nodej": 489,
+        "nodek": 632,
+        "nodel": 677
+    }
+}

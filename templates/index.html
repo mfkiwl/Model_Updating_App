@@ -16,11 +16,12 @@
         const mainContainer = document.getElementById(MAIN_CONTAINER_ID);
         let creator;
 
+
         if (mainContainer) {
             creator = new SCENE3D(MAIN_CONTAINER_ID);
             creator.create_scene();
-            creator.create_nodes("http://127.0.0.1:8888/api/Nodes");
-            creator.create_lines("http://127.0.0.1:8888/api/Lines");
+            creator.scene_elements();
+
         }
     </script>
 </body>

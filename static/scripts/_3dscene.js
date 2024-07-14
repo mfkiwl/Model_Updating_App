@@ -193,6 +193,16 @@ class SCENE3D {
         }
     }
     
+    scene_elements = async () => {
+        try {
+            await creator.create_nodes("http://127.0.0.1:8888/api/Nodes");
+            await creator.create_lines("http://127.0.0.1:8888/api/Lines");
+            await creator.create_surface("http://127.0.0.1:8888/api/Mesh");
+            console.log("All tasks completed successfully");
+        } catch (error) {
+            console.error("An error occurred:", error);
+        }
+    }
 
     create_nodes = async (path) => {
         const nodes_dict = await this.fetch_data(path);
@@ -208,6 +218,13 @@ class SCENE3D {
         Object.values(lines_dict).forEach((item) => {
             this.addLine(item.nodei, item.nodej);
         });
+    }
+
+    create_surface = async (path) => {  
+        let parent = this;  
+        const surface = await this.fetch_data(path);
+        const elements = Object.values(surface);
+        this.createMeshFilled(parent.nodes,elements);
     }
 
     addNode = (x, y, z) => {
@@ -243,6 +260,61 @@ class SCENE3D {
         this.scene.add(line);
     }
 
-
+    createMeshFilled = (nodes, elements) => {
+        // Create materials
+        const lineMaterial = new THREE.LineBasicMaterial({
+            color: '#0C0C0C',  // Color for lines
+            linewidth: 2,      // Set line width, note: may not be supported in all environments
+            transparent: true, // Enable transparency
+            opacity: 0.75,     // Set opacity to 75%
+            depthTest: true,   // Enable depth testing
+            depthWrite: false, // Optional: disable depth writing for a blending effect
+            dashSize: 3,       // Define size of dashes
+            gapSize: 1,        // Define size of gaps between dashes
+        });
+    
+        const meshMaterial = new THREE.MeshPhongMaterial({
+            color: '#00FFFF', // Cyan color for the mesh
+            side: THREE.DoubleSide, // Render both sides of the material
+            specular: 0x222222, // Controls the shine and highlights
+            shininess: 35, // Adjust shininess for a glossy effect
+            flatShading: true,
+        });
+    
+        // Go through each element to draw the filled quads and the lines
+        elements.forEach((element) => {
+            const nodei = nodes[element.nodei];
+            const nodej = nodes[element.nodej];
+            const nodek = nodes[element.nodek];
+            const nodel = nodes[element.nodel];
+    
+            // Create an array of vertices for the quad
+            const vertices = [
+                new THREE.Vector3(nodei.x, nodei.y, nodei.z),
+                new THREE.Vector3(nodej.x, nodej.y, nodej.z),
+                new THREE.Vector3(nodek.x, nodek.y, nodek.z),
+                new THREE.Vector3(nodel.x, nodel.y, nodel.z)
+            ];
+    
+            // Create the geometry for the quad
+            const geometry = new THREE.BufferGeometry().setFromPoints(vertices);
+            geometry.setIndex([0, 1, 2, 0, 2, 3]); // Define the two triangles forming the quad
+            geometry.computeVertexNormals(); // Compute normals
+    
+            const mesh = new THREE.Mesh(geometry, meshMaterial);
+    
+            // Create lines for the edges of the quad
+            const lineGeometry = new THREE.BufferGeometry().setFromPoints(vertices);
+            lineGeometry.setIndex([0, 1, 1, 2, 2, 3, 3, 0]); // Define the lines using the vertices
+            const line = new THREE.LineSegments(lineGeometry, lineMaterial);
+    
+            // Add the mesh and line to the scene
+            this.scene.add(mesh);
+            this.scene.add(line);
+    
+            // Uncomment the following line if you want the camera to look at the mesh
+            // this.camera.lookAt(mesh.position);
+        });
+    }
 
 }
