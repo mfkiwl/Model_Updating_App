@@ -12,7 +12,7 @@ class SCENE3D {
         this.mouse = new THREE.Vector2();
         this.raycaster = new THREE.Raycaster();
         this.intersected = null;
-        this.onMouseMove = this.onMouseMove.bind(this);
+        this.sections = {};
 
     }
 
@@ -108,7 +108,7 @@ class SCENE3D {
             controls.update(); // Only required if controls.enableDamping or controls.autoRotate are set to true
             renderer.render(scene, camera);
             //console.log(`Camera position: x=${camera.position.x}, y=${camera.position.y}, z=${camera.position.z}`);
-            console.log(`Controls target: x=${controls.target.x}, y=${controls.target.y}, z=${controls.target.z}`);
+            //console.log(`Controls target: x=${controls.target.x}, y=${controls.target.y}, z=${controls.target.z}`);
 
 
         };
@@ -138,44 +138,8 @@ class SCENE3D {
     }
     */
 
-    onMouseMove = (event) => {
-        event.preventDefault();
     
-        const rect = this.container.getBoundingClientRect();
-        this.mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
-        this.mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
-    
-        this.raycaster.setFromCamera(this.mouse, this.camera);
-        const intersects = this.raycaster.intersectObjects(this.scene.children);
-    
-        if (intersects.length > 0) {
-            if (this.intersected !== intersects[0].object) {
-                if (this.intersected) {
-                    // Reset previous intersection object's material or color if needed
-                }
-    
-                this.intersected = intersects[0].object;
-    
-                // Show tooltip
-                if (this.intersected.name !== "CAT 793"){
-                const tooltip = document.getElementById('tooltip');
-                tooltip.style.display = 'block';
-                tooltip.style.left = `${event.clientX}px`;
-                tooltip.style.top = `${event.clientY}px`;
-                tooltip.textContent = this.intersected.name;
-                } // Assuming the name of the sphere is set to something meaningful
-            }
-        } else {
-            if (this.intersected) {
-                // Reset intersection object's material or color if needed
-                this.intersected = null;
-    
-                // Hide tooltip
-                const tooltip = document.getElementById('tooltip');
-                tooltip.style.display = 'none';
-            }
-        }
-    }
+
 
     render = () => {
         this.renderer.render(this.scene, this.camera);
@@ -198,6 +162,9 @@ class SCENE3D {
             await creator.create_nodes("http://127.0.0.1:8888/api/Nodes");
             await creator.create_lines("http://127.0.0.1:8888/api/Lines");
             await creator.create_surface("http://127.0.0.1:8888/api/Mesh");
+            await creator.extrude_sections("http://127.0.0.1:8888/api/Lines",
+                "http://127.0.0.1:8888/api/Section_assign",
+                "http://127.0.0.1:8888/api/Sections")
             console.log("All tasks completed successfully");
         } catch (error) {
             console.error("An error occurred:", error);
@@ -226,6 +193,41 @@ class SCENE3D {
         const elements = Object.values(surface);
         this.createMeshFilled(parent.nodes,elements);
     }
+
+    extrude_sections = async (path_lines,path_assignations,path_cross_sections) => {
+        const lines_dict = await this.fetch_data(path_lines);
+        const section = await this.fetch_data(path_assignations);
+        const cross_sections = await this.fetch_data(path_cross_sections);
+
+        console.log("cross_sections",cross_sections[0])
+        console.log("section",section)
+        console.log("lines_dict",lines_dict)
+        Object.entries(lines_dict).forEach(([key, item]) => {
+            const element_id = key
+            const Nidi = item.nodei
+            const Nidj = item.nodej
+
+            const section_assigs = section[element_id]
+            console.log(section_assigs)
+            const sections_id = section_assigs.secid
+            const rotation = section_assigs.rotation
+
+            cross_sections.forEach((cross_section) => {
+                if (cross_section.element_id == sections_id){
+                    
+                    const Polygon = cross_section.polygon;
+                    console.log("got poligones " ,Polygon)
+                    this.extrude_line(Nidi,Nidj,rotation, Polygon)
+                }
+            })
+
+
+
+        });
+
+
+    }
+    
 
     addNode = (x, y, z) => {
        
@@ -317,4 +319,121 @@ class SCENE3D {
         });
     }
 
-}
+        extrude_line = (Nidi,Nidj,rotation, Polygon) =>{
+            let parent = this;
+            let lines = parent.lines;
+            const material = new THREE.LineBasicMaterial({ color: 0x0000ff });
+            
+            if (!(Nidi  in parent.nodes)  && !(Nidj  in parent.nodes)) {
+                console.error('Invalid node index');
+            }
+    
+            const sP = parent.nodes[Nidi];
+            const eP = parent.nodes[Nidj];
+
+            console.log("sP",sP)    
+            const startPoint = new THREE.Vector3( sP.x, sP.y, sP.z )
+        
+            const endPoint = new THREE.Vector3( eP.x, eP.y, eP.z )
+        
+    
+            const directionVector = endPoint.clone().sub(startPoint)
+            const zDirenction = new THREE.Vector3(0,0,1)
+            const path = new THREE.CatmullRomCurve3( [
+                new THREE.Vector3(),
+                directionVector.clone()
+            ]);
+    
+            const position = startPoint
+            const quaternion = new THREE.Quaternion()
+                quaternion.setFromAxisAngle(
+                    directionVector.normalize(),
+                    0
+                    )
+    
+            //console.log("inputs : **",path, cs_name, position, quaternion, directionVector, rotation)
+    
+            parent.createExrusion({ Polygon, position, quaternion, directionVector, rotation ,path})
+            
+    
+        }
+
+
+        createExrusion = async ({ Polygon, position, quaternion, directionVector, rotation ,path}) => {
+            let firstPoint
+            let lastPoint
+            let shape = new THREE.Shape();
+
+            
+            Polygon.forEach((point, index, array) => {
+                const rotCos = Math.cos(rotation);
+                const rotSin = Math.sin(rotation);
+            
+                // Rotate the points according to the rotation angle
+                const rotatedX = point.x * rotCos - point.y * rotSin;
+                const rotatedY = point.x * rotSin + point.y * rotCos;
+            
+                if (index === 0) {
+                    // Move to the first point after rotation
+                    shape.moveTo(rotatedX, rotatedY);
+                } else {
+                    // Line to the subsequent points after rotation
+                    shape.lineTo(rotatedX, rotatedY);
+                }
+            
+                // Close the shape by connecting back to the first rotated point after the last point is reached
+                if (index === array.length - 1) {
+                    shape.closePath();
+                }
+            })
+                
+                const extrudeSettings = {
+                    steps: 1,
+                    // depth: 16,
+                    extrudePath: path,
+                    // bevelEnabled: true,
+                    // bevelThickness: 1,
+                    // bevelSize: 1,
+                    // bevelOffset: 0,
+                    // bevelSegments: 1
+                };
+    
+                const geometry = new THREE.ExtrudeGeometry(shape, extrudeSettings);
+                const material = new THREE.MeshLambertMaterial({ color: this.getRandomRainbowColor() });
+                const mesh = new THREE.Mesh(geometry, material);
+                mesh.position.copy( position )
+                mesh.rotateOnAxis( directionVector, rotation )
+
+                const edges = new THREE.EdgesGeometry( geometry );
+                const line = new THREE.LineSegments( edges, new THREE.LineBasicMaterial( { color: 0x838383 } ) );
+                mesh.add( line );
+                
+                /*
+
+                if ( profile.coordinates.Polygon.length < 20 || !profile.coordinates.Name.includes('CHS') ){
+                    const edges = new THREE.EdgesGeometry( geometry );
+                    const line = new THREE.LineSegments( edges, new THREE.LineBasicMaterial( { color: 0x838383 } ) );
+                    mesh.add( line );
+                }
+                    */
+    
+                console.log("current scene",this.scene)
+                console.log("mesh",mesh)
+                this.cross_section.push(mesh)
+                this.scene.add(mesh);
+            };
+
+
+            getRandomRainbowColor = () => {
+                const colors = [
+                    0xff0000, // Red
+                    0xff7f00, // Orange
+                    0xffff00, // Yellow
+                    0x00ff00, // Green
+                    0x0000ff, // Blue
+                    0x4b0082, // Indigo
+                    0x9400d3  // Violet
+                ];
+                return colors[Math.floor(Math.random() * colors.length)]
+            }
+    }

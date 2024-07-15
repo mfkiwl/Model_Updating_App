@@ -36,6 +36,16 @@ def get_lines():
     mesh = load_json('data/mesh_shells.json')
     return JSONResponse(content=mesh)
 
+@app.get("/api/Section_assign")
+def get_sections_id():
+    sections = load_json('data/sections_assignation.json')
+    return JSONResponse(content=sections)
+
+@app.get("/api/Sections")
+def get_sections_geometry():
+    sections = load_json('data/cross_section.json')
+    return JSONResponse(content=sections)
+
 origins = [
     "http://localhost",
     "http://localhost:8888"]
