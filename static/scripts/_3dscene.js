@@ -91,13 +91,12 @@ class SCENE3D {
         const controls = this.controls;
         this.controls.enableDamping = false;
         //this.controls.dampingFactor = 0.9;
-
-        camera.position.set(-1427.6862345705986, 825.7814372658702, 4715.351832717299); // Set camera position based on log values
-
-
+        camera.position.set(9676.142752382411, -14331.26271822394, 8775.831370391728);
+        
+        
         const centerVector = new THREE.Vector3(0, 0, 0); 
-
-        this.controls.target.set(1014.6758159813975, -1919.3794991799784, 881.5088002285361); // Set controls target based on log values
+        
+        this.controls.target.set(9451.490341800703, -1271.9103938172098, 1787.7972245854658);
 
         container.appendChild(renderer.domElement);
         renderer.domElement.addEventListener('mousemove', this.onMouseMove, false);
@@ -107,7 +106,8 @@ class SCENE3D {
             requestAnimationFrame(animate);
             controls.update(); // Only required if controls.enableDamping or controls.autoRotate are set to true
             renderer.render(scene, camera);
-            //console.log(`Camera position: x=${camera.position.x}, y=${camera.position.y}, z=${camera.position.z}`);
+            
+            //  console.log(`Camera position: x=${camera.position.x}, y=${camera.position.y}, z=${camera.position.z}`);
             //console.log(`Controls target: x=${controls.target.x}, y=${controls.target.y}, z=${controls.target.z}`);
 
 
@@ -199,9 +199,9 @@ class SCENE3D {
         const section = await this.fetch_data(path_assignations);
         const cross_sections = await this.fetch_data(path_cross_sections);
 
-        console.log("cross_sections",cross_sections[0])
-        console.log("section",section)
-        console.log("lines_dict",lines_dict)
+        //console.log("cross_sections",cross_sections[0])
+        //console.log("section",section)
+        //console.log("lines_dict",lines_dict)
         Object.entries(lines_dict).forEach(([key, item]) => {
             const element_id = key
             const Nidi = item.nodei
@@ -216,8 +216,8 @@ class SCENE3D {
                 if (cross_section.element_id == sections_id){
                     
                     const Polygon = cross_section.polygon;
-                    console.log("got poligones " ,Polygon)
-                    this.extrude_line(Nidi,Nidj,rotation, Polygon)
+                    const sec_type = cross_section.type;
+                    this.extrude_line(Nidi,Nidj,rotation, Polygon,sec_type)
                 }
             })
 
@@ -231,7 +231,7 @@ class SCENE3D {
 
     addNode = (x, y, z) => {
        
-        const geometry = new THREE.SphereGeometry(100, 100, 100);
+        const geometry = new THREE.SphereGeometry(30, 30, 30);
         const material = new THREE.MeshBasicMaterial({ color: 0xff0000 });
         const node = new THREE.Mesh(geometry, material);
 
@@ -319,7 +319,7 @@ class SCENE3D {
         });
     }
 
-        extrude_line = (Nidi,Nidj,rotation, Polygon) =>{
+        extrude_line = (Nidi,Nidj,rotation, Polygon,type) =>{
             let parent = this;
             let lines = parent.lines;
             const material = new THREE.LineBasicMaterial({ color: 0x0000ff });
@@ -353,13 +353,13 @@ class SCENE3D {
     
             //console.log("inputs : **",path, cs_name, position, quaternion, directionVector, rotation)
     
-            parent.createExrusion({ Polygon, position, quaternion, directionVector, rotation ,path})
+            parent.createExrusion({ Polygon, position, quaternion, directionVector, rotation ,path,type})
             
     
         }
 
 
-        createExrusion = async ({ Polygon, position, quaternion, directionVector, rotation ,path}) => {
+        createExrusion = async ({ Polygon, position, quaternion, directionVector, rotation ,path,type}) => {
             let firstPoint
             let lastPoint
             let shape = new THREE.Shape();
@@ -403,19 +403,19 @@ class SCENE3D {
                 const mesh = new THREE.Mesh(geometry, material);
                 mesh.position.copy( position )
                 mesh.rotateOnAxis( directionVector, rotation )
-
+                /*
                 const edges = new THREE.EdgesGeometry( geometry );
                 const line = new THREE.LineSegments( edges, new THREE.LineBasicMaterial( { color: 0x838383 } ) );
                 mesh.add( line );
+                */
                 
-                /*
 
-                if ( profile.coordinates.Polygon.length < 20 || !profile.coordinates.Name.includes('CHS') ){
+                if ( Polygon.length < 20 || !(type == "CHS") ){
                     const edges = new THREE.EdgesGeometry( geometry );
-                    const line = new THREE.LineSegments( edges, new THREE.LineBasicMaterial( { color: 0x838383 } ) );
+                    const line = new THREE.LineSegments( edges, new THREE.LineBasicMaterial( { color: 0xffffff } ) );
                     mesh.add( line );
                 }
-                    */
+                    
     
                 console.log("current scene",this.scene)
                 console.log("mesh",mesh)

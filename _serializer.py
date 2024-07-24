@@ -44,6 +44,58 @@ def mesh_quad2dict(Model)->dict:
         }
     return quads_dict
 
+
+def sections_assignations(Model):
+    '''
+    dict : key is element id , values are section id and rotation
+    
+    '''
+    sections_assignation = Model.idele
+    sect_asig_dict = {}
+    for eleid,sectionid,rotation in sections_assignation:
+        sect_asig_dict[int(eleid)] = {
+            "secid": int(sectionid),
+            "rotation": float(rotation)
+        }
+    return sect_asig_dict
+
+
+def get_model_modeshapes(Model, mode_shape_num:int , scale_factor:int)->dict:
+    ops, _ = Model.create_model(verbose=False)
+
+    nodes:dict  = nodes2dict(Model)
+    modeshape:dict = {}
+    magnitude:dict = {} 
+    mode_shape_dict = {}
+
+
+    _ = Model.Modal_analysis(Nm = mode_shape_num)
+
+    for modid  in range(1,mode_shape_num+1):
+        for node_key, coordinates in nodes.items():
+            x,y,z = coordinates.values()
+
+            ux = ops.nodeEigenvector(node_key, modid)[0]
+            uy = ops.nodeEigenvector(node_key, modid)[1]
+            uz = ops.nodeEigenvector(node_key, modid)[2]
+
+            magnitud_value = np.linalg.norm([ux,uy,uz])
+
+            modeshape[node_key] = {'x': coordinates['x']+scale_factor*ux,
+                            'y': coordinates['y']+scale_factor*uy,
+                            'z': coordinates['z']+scale_factor*uz
+                            }
+            magnitude[node_key] = {'magnitud':magnitud_value}
+
+
+        mode_shape_dict[f'modeshape_{modid}'] = modeshape
+        mode_shape_dict[f'magnitud_{modid}'] = magnitude
+    mode_shape_dict['nodes'] = nodes
+
+    return mode_shape_dict
+
+
+
 def save_json(data:dict, path:str)->None:
     with open(path, 'w') as file:
         json.dump(data, file, indent=4)

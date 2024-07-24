@@ -1,10 +1,10 @@
 import numpy as np 
 import concurrent
-from concurrent.futures import ProcessPoolExecutor
-from multiprocessing import Pool
 import pandas  as pd 
 import seaborn as sns
 import matplotlib.pyplot as plt
+from multiprocessing import Pool
+from concurrent.futures import ProcessPoolExecutor
 
 
 def mas_dist(mu = -4.6, std =  0.5, n_samples = 1):

@@ -54,7 +54,6 @@ if __name__ == '__main__':
 
     chain_results = run_chains_parallel(models,num_chains=4, n_iterations=1000)
     
-
     for i, chain_result in enumerate(chain_results):
         print(f"Chain {i}")
         plot_pair_grid(chain_result)

@@ -46,6 +46,24 @@ def get_sections_geometry():
     sections = load_json('data/cross_section.json')
     return JSONResponse(content=sections)
 
+
+@app.get("/api/all_modeshapes")
+def get_all_modeshapes():
+    modeshapes = load_json('data/modeshapes.json')
+    return JSONResponse(content=modeshapes)
+
+@app.get("/api/modeshape/{mode_shape_num}")
+def get_modeshape(mode_shape_num:int):
+    modeshapes = load_json('data/modeshapes.json')
+    return JSONResponse(content=modeshapes[f'modeshape_{mode_shape_num}'])
+
+@app.get("/api/magnitude/{mode_shape_num}")
+def get_magnitude(mode_shape_num:int):
+    modeshapes = load_json('data/modeshapes.json')
+    return JSONResponse(content=modeshapes[f'magnitud_{mode_shape_num}'])
+
+
+
 origins = [
     "http://localhost",
     "http://localhost:8888"]
