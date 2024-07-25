@@ -13,6 +13,7 @@ class SCENE3D {
         this.raycaster = new THREE.Raycaster();
         this.intersected = null;
         this.sections = {};
+        this.modeshape_nodes = {};
 
     }
 
@@ -159,6 +160,7 @@ class SCENE3D {
     
     scene_elements = async () => {
         try {
+            await creator.load_modeshape_data("http://127.0.0.1:8888/api/all_modeshapes")
             await creator.create_nodes("http://127.0.0.1:8888/api/Nodes");
             await creator.create_lines("http://127.0.0.1:8888/api/Lines");
             await creator.create_surface("http://127.0.0.1:8888/api/Mesh");
@@ -217,7 +219,7 @@ class SCENE3D {
                     
                     const Polygon = cross_section.polygon;
                     const sec_type = cross_section.type;
-                    this.extrude_line(Nidi,Nidj,rotation, Polygon,sec_type)
+                    this.extrude_line(Nidi,Nidj,rotation, Polygon,sec_type,2)
                 }
             })
 
@@ -319,7 +321,7 @@ class SCENE3D {
         });
     }
 
-        extrude_line = (Nidi,Nidj,rotation, Polygon,type) =>{
+        extrude_line = (Nidi,Nidj,rotation, Polygon,type , modeshape_num) =>{
             let parent = this;
             let lines = parent.lines;
             const material = new THREE.LineBasicMaterial({ color: 0x0000ff });
@@ -327,11 +329,23 @@ class SCENE3D {
             if (!(Nidi  in parent.nodes)  && !(Nidj  in parent.nodes)) {
                 console.error('Invalid node index');
             }
-    
-            const sP = parent.nodes[Nidi];
-            const eP = parent.nodes[Nidj];
+            let sP , eP
+            if (!modeshape_num){
+                const sP = parent.nodes[Nidi];
+                const eP = parent.nodes[Nidj];
 
-            console.log("sP",sP)    
+            } else {
+                Object.entries(this.modeshape_nodes).forEach(([key, value]) => {
+                    if (key === `modeshape_${modeshape_num}`) {
+                        sP = value[Nidi];
+                        eP = value[Nidj];
+
+                        console.log("sP",sP,"eP",eP)
+                        
+                    }
+                });
+            }   
+            
             const startPoint = new THREE.Vector3( sP.x, sP.y, sP.z )
         
             const endPoint = new THREE.Vector3( eP.x, eP.y, eP.z )
@@ -358,6 +372,11 @@ class SCENE3D {
     
         }
 
+        load_modeshape_data = async (api_endpoint) => {
+        
+            const data = await this.fetch_data(api_endpoint);
+            this.modeshape_nodes = data;
+        };
 
         createExrusion = async ({ Polygon, position, quaternion, directionVector, rotation ,path,type}) => {
             let firstPoint

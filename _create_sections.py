@@ -59,7 +59,7 @@ def I_section(height:float, width:float, flange_thick:float, web_thick:float, el
 
 list_of_sections = [
     HSS(101.6, 101.6, 1), 
-    HSS(101.6, 101.6, 2),
+    HSS(101.6, 101.6, 2)    ,
     CHS(355/2, 3),
     I_section(180, 180, 12, 12, 4),
     I_section(350, 350, 12, 12, 5)
