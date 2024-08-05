@@ -11,8 +11,7 @@ from pathlib import Path
 from loading_csv_rfem import run_parsers
 from _helpers_model_upd import mas_dist,metropolis_hastings,run_chains_parallel,run_model_single,plot_pair_grid
 
-sys.path.append("/Users/alejandroduarte/Documents/Model_Updating_App/Opensees_Engine")
-from _opensees_engine import Model
+from Opensees_Engine import Model
 
 
 plt.close('all')
@@ -52,7 +51,7 @@ if __name__ == '__main__':
 
     models = [model1, model2,model3,model4]
 
-    chain_results = run_chains_parallel(models,num_chains=4, n_iterations=1000)
+    chain_results = run_chains_parallel(models,num_chains=4, n_iterations=100)
     
     for i, chain_result in enumerate(chain_results):
         print(f"Chain {i}")

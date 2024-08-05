@@ -5,12 +5,17 @@ from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 import json
+from pathlib import Path
+import sys 
+sys.path.append('../')
+base_dir = Path(__file__).resolve().parent.parent
+
 
 templates = Jinja2Templates(directory="templates")
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
-app.mount("/data", StaticFiles(directory="data"), name="data")
+app.mount("/data", StaticFiles(directory=base_dir / "data"), name="data")
 
 def load_json(file_path):
     with open(file_path, 'r') as file:
@@ -23,43 +28,43 @@ def home(request: Request):
 
 @app.get("/api/Nodes")
 def get_nodes():
-    nodes = load_json('data/nodes.json')
+    nodes = load_json(base_dir / 'data/nodes.json')
     return JSONResponse(content=nodes)
 
 @app.get("/api/Lines")
 def get_lines():
-    lines = load_json('data/conectivity.json')
+    lines = load_json(base_dir / 'data/conectivity.json')
     return JSONResponse(content=lines)
 
 @app.get("/api/Mesh")
 def get_lines():
-    mesh = load_json('data/mesh_shells.json')
+    mesh = load_json(base_dir / 'data/mesh_shells.json')
     return JSONResponse(content=mesh)
 
 @app.get("/api/Section_assign")
 def get_sections_id():
-    sections = load_json('data/sections_assignation.json')
+    sections = load_json(base_dir / 'data/sections_assignation.json')
     return JSONResponse(content=sections)
 
 @app.get("/api/Sections")
 def get_sections_geometry():
-    sections = load_json('data/cross_section.json')
+    sections = load_json(base_dir / 'data/cross_section.json')
     return JSONResponse(content=sections)
 
 
 @app.get("/api/all_modeshapes")
 def get_all_modeshapes():
-    modeshapes = load_json('data/modeshapes.json')
+    modeshapes = load_json(base_dir / 'data/modeshapes.json')
     return JSONResponse(content=modeshapes)
 
 @app.get("/api/modeshape/{mode_shape_num}")
 def get_modeshape(mode_shape_num:int):
-    modeshapes = load_json('data/modeshapes.json')
+    modeshapes = load_json(base_dir / 'data/modeshapes.json')
     return JSONResponse(content=modeshapes[f'modeshape_{mode_shape_num}'])
 
 @app.get("/api/magnitude/{mode_shape_num}")
 def get_magnitude(mode_shape_num:int):
-    modeshapes = load_json('data/modeshapes.json')
+    modeshapes = load_json(base_dir / 'data/modeshapes.json')
     return JSONResponse(content=modeshapes[f'magnitud_{mode_shape_num}'])
 
 
