@@ -2,8 +2,9 @@ import numpy as np
 import concurrent
 import pandas  as pd 
 import seaborn as sns
-from classes import Parameter, ProposalParameters, ParameterRecorder, TargedParameter
+from classes import Parameter, ProposalParameters, RecorderList, TargedParameter
 from Opensees_Engine import Model
+from typing import List, Tuple
 
 import matplotlib.pyplot as plt
 from multiprocessing import Pool
@@ -29,50 +30,70 @@ class ModelUpdater:
                  model: Model, 
                  proposal_parameters: ProposalParameters,
                  target_parameter: TargedParameter,
-                 param_recorder: ParameterRecorder,
-                 num_chains: int,
+                 recorder_list: RecorderList,
                  n_iterations: int,
-                 std_dev: float,
-                 acceptedmodel: any):
+                 std_dev: float):
         
         self.model = model
         self.proposal_parameters = proposal_parameters
         self.target_parameter = target_parameter
-        self.num_chains = num_chains
         self.n_iterations = n_iterations
         self.std_dev = std_dev
-        self.acceptedmodel = acceptedmodel,
-        self.param_recorder = param_recorder
+        self.recorder_list = recorder_list
 
-    def metropolis_hastings(model, target_freq=8.74, init_mass=0, n_iterations=100, std_dev=0.1, chain_id=0):
-        np.random.seed(chain_id)
-        current_Et = 1.2
-        current_mass = init_mass
-        current_freq_4 = 0  # Initialize
-        
-        accepted_mass = []
-        accepted_Et = []
-        freq_dist = []
-        freq_diff = []  # To store the difference between proposed_freq_4 and target_freq
-        
-        for i in range(n_iterations):
-            proposed_mass = mas_dist(mu=current_mass, std=std_dev, n_samples=1)
-            proposed_Et = Et_dist(mu=current_Et, std=0.2 ,n_samples=1)
+    def meetropolis_hastings(self
+                             )-> Tuple[RecorderList, TargedParameter]:
 
-            proposed_freq_4 = update_model(model, proposed_mass, proposed_Et)
-            freq_difference = proposed_freq_4 - target_freq
-            freq_diff.append(freq_difference)
-            acceptance_ratio = np.exp(-np.abs(freq_difference) / 0.1)
+        current_values: List[float] = self.proposal_parameters.get_init_values()
+        self.proposal_parameters.set_means(current_values)
+        for i in range(self.n_iterations):
+            proposed_values = self.proposal_parameters.get_values()
+            # Update the model with the proposed values
+            propsed_freq = self.target_parameter.function_to_update(
+                self.model, *proposed_values)
             
+            # Calculate the freq diff
+            freq_diff = propsed_freq - self.target_parameter.target_value
+            print(freq_diff)
+
+            acceptance_ratio = np.exp(-np.abs(freq_diff) / self.std_dev)
+
             if acceptance_ratio > np.random.rand():
-                current_mass = proposed_mass
-                current_Et = proposed_Et
-                current_freq_4 = proposed_freq_4
-                accepted_mass.append(current_mass)
-                accepted_Et.append(current_Et)
-                freq_dist.append(proposed_freq_4)
-                
-        return accepted_mass, freq_dist, accepted_Et, freq_diff
+                current_values = proposed_values
+                self.recorder_list.append_multiple(current_values)
+                self.target_parameter.append_posterior(propsed_freq)
+        return self.recorder_list, self.target_parameter
+
+def metropolis_hastings(model, target_freq=8.74, init_mass=0, n_iterations=100, std_dev=0.1, chain_id=0):
+    np.random.seed(chain_id)
+    current_Et = 1.2
+    current_mass = init_mass
+    current_freq_4 = 0  # Initialize
+    
+    accepted_mass = []
+    accepted_Et = []
+    freq_dist = []
+    freq_diff = []  # To store the difference between proposed_freq_4 and target_freq
+    
+    for i in range(n_iterations):
+        proposed_mass = mas_dist(mu=current_mass, std=std_dev, n_samples=1)
+        proposed_Et = Et_dist(mu=current_Et, std=0.2 ,n_samples=1)
+
+        proposed_freq_4 = update_model(model, proposed_mass, proposed_Et)
+        freq_difference = proposed_freq_4 - target_freq
+        print(freq_difference)
+        freq_diff.append(freq_difference)
+        acceptance_ratio = np.exp(-np.abs(freq_difference) / 0.1)
+        
+        if acceptance_ratio > np.random.rand():
+            current_mass = proposed_mass
+            current_Et = proposed_Et
+            current_freq_4 = proposed_freq_4
+            accepted_mass.append(current_mass)
+            accepted_Et.append(current_Et)
+            freq_dist.append(proposed_freq_4)
+            
+    return accepted_mass, freq_dist, accepted_Et, freq_diff
 
 
 def metropolis_hastings(model, target_freq=8.74, init_mass=0, n_iterations=100, std_dev=0.1, chain_id=0):
