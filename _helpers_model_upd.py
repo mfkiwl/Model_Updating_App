@@ -2,6 +2,9 @@ import numpy as np
 import concurrent
 import pandas  as pd 
 import seaborn as sns
+from classes import Parameter, ProposalParameters, ParameterRecorder, TargedParameter
+from Opensees_Engine import Model
+
 import matplotlib.pyplot as plt
 from multiprocessing import Pool
 from concurrent.futures import ProcessPoolExecutor
@@ -21,6 +24,57 @@ def Et_dist(mu=1.5, std=0.2, n_samples=1):
     return np.round(samples, 2)[0]
 
 
+class ModelUpdater:
+    def __init__(self,
+                 model: Model, 
+                 proposal_parameters: ProposalParameters,
+                 target_parameter: TargedParameter,
+                 param_recorder: ParameterRecorder,
+                 num_chains: int,
+                 n_iterations: int,
+                 std_dev: float,
+                 acceptedmodel: any):
+        
+        self.model = model
+        self.proposal_parameters = proposal_parameters
+        self.target_parameter = target_parameter
+        self.num_chains = num_chains
+        self.n_iterations = n_iterations
+        self.std_dev = std_dev
+        self.acceptedmodel = acceptedmodel,
+        self.param_recorder = param_recorder
+
+    def metropolis_hastings(model, target_freq=8.74, init_mass=0, n_iterations=100, std_dev=0.1, chain_id=0):
+        np.random.seed(chain_id)
+        current_Et = 1.2
+        current_mass = init_mass
+        current_freq_4 = 0  # Initialize
+        
+        accepted_mass = []
+        accepted_Et = []
+        freq_dist = []
+        freq_diff = []  # To store the difference between proposed_freq_4 and target_freq
+        
+        for i in range(n_iterations):
+            proposed_mass = mas_dist(mu=current_mass, std=std_dev, n_samples=1)
+            proposed_Et = Et_dist(mu=current_Et, std=0.2 ,n_samples=1)
+
+            proposed_freq_4 = update_model(model, proposed_mass, proposed_Et)
+            freq_difference = proposed_freq_4 - target_freq
+            freq_diff.append(freq_difference)
+            acceptance_ratio = np.exp(-np.abs(freq_difference) / 0.1)
+            
+            if acceptance_ratio > np.random.rand():
+                current_mass = proposed_mass
+                current_Et = proposed_Et
+                current_freq_4 = proposed_freq_4
+                accepted_mass.append(current_mass)
+                accepted_Et.append(current_Et)
+                freq_dist.append(proposed_freq_4)
+                
+        return accepted_mass, freq_dist, accepted_Et, freq_diff
+
+
 def metropolis_hastings(model, target_freq=8.74, init_mass=0, n_iterations=100, std_dev=0.1, chain_id=0):
     np.random.seed(chain_id)
     current_Et = 1.2
@@ -35,20 +89,11 @@ def metropolis_hastings(model, target_freq=8.74, init_mass=0, n_iterations=100, 
     for i in range(n_iterations):
         proposed_mass = mas_dist(mu=current_mass, std=std_dev, n_samples=1)
         proposed_Et = Et_dist(mu=current_Et, std=0.2 ,n_samples=1)
-        model.surfaces[2][2] = 53.0
-        model.surface_materials[0, 4] = 2e-20
-        model.nodal_loads[0][4] = proposed_mass
-        model.nodal_loads[1][4] = proposed_mass
-        
-        _, _ = model.create_model(verbose=False, Et=proposed_Et)
-        freq = model.Modal_analysis(20)
-        proposed_freq_4 = freq[4]**0.5 / (2 * np.pi)
-        
-        # Calculate the difference between proposed frequency and target frequency
+
+        proposed_freq_4 = update_model(model, proposed_mass, proposed_Et)
         freq_difference = proposed_freq_4 - target_freq
         freq_diff.append(freq_difference)
-        
-        acceptance_ratio = np.exp(-np.abs(freq_difference) / 0.1)  # Here, 0.1 is the desired std_dev
+        acceptance_ratio = np.exp(-np.abs(freq_difference) / 0.1)
         
         if acceptance_ratio > np.random.rand():
             current_mass = proposed_mass
@@ -94,20 +139,30 @@ def metropolis_hastings_iomac(model, target_freq=5.445, init_mass_variation=0.0,
             freq_dist.append(proposed_freq_0)
     
     return accepted_mass_variations, freq_dist, freq_diff
+    
 
-
-
+def update_model(model,proposed_mass, proposed_Et):
+    model.surfaces[2][2] = 53.0
+    model.surface_materials[0, 4] = 2e-20
+    model.nodal_loads[0][4] = proposed_mass
+    model.nodal_loads[1][4] = proposed_mass
+    
+    _, _ = model.create_model(verbose=False, Et=proposed_Et)
+    freq = model.Modal_analysis(20)
+    proposed_freq_4 = freq[4]**0.5 / (2 * np.pi)
+    return proposed_freq_4
+    
 
 def run_model_single(model,mass = '-4'):
-        proposed_mass = mas_dist()
-        model.surface_materials[0,4] = 2e-20
-        model.nodal_loads[0][4] = proposed_mass
-        model.nodal_loads[1][4] = proposed_mass
-        _, _ = model.create_model(verbose=False)
-        freq = model.Modal_analysis(20)
-        proposed_freq_4 = freq[4]**0.5 / (2 * np.pi)
-        print(proposed_freq_4,proposed_mass)
-        
+    proposed_mass = mas_dist()
+    model.surface_materials[0,4] = 2e-20
+    model.nodal_loads[0][4] = proposed_mass
+    model.nodal_loads[1][4] = proposed_mass
+    _, _ = model.create_model(verbose=False)
+    freq = model.Modal_analysis(20)
+    proposed_freq_4 = freq[4]**0.5 / (2 * np.pi)
+    print(proposed_freq_4,proposed_mass)
+    
 
 def _run_chain_wrapper(args):
     i, model, init_mass, iterations = args
