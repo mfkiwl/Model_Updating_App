@@ -1,6 +1,0 @@
-{
-    "python.analysis.extraPaths": [
-        "./Opensees_Engine"
-    ],
-    "git.ignoreLimitWarning": true
-}
