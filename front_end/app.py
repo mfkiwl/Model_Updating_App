@@ -1,12 +1,14 @@
-from fastapi.staticfiles import StaticFiles
-from fastapi import FastAPI, Request
-from fastapi.templating import Jinja2Templates
-from fastapi.responses import HTMLResponse, JSONResponse
-from fastapi.middleware.cors import CORSMiddleware
-import uvicorn
-import json
 from pathlib import Path
+from fastapi import FastAPI, Request
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import HTMLResponse, JSONResponse
+
 import sys 
+import json
+import uvicorn
+
 sys.path.append('../')
 base_dir = Path(__file__).resolve().parent.parent
 
@@ -51,7 +53,6 @@ def get_sections_geometry():
     sections = load_json(base_dir / 'data/cross_section.json')
     return JSONResponse(content=sections)
 
-
 @app.get("/api/all_modeshapes")
 def get_all_modeshapes():
     modeshapes = load_json(base_dir / 'data/modeshapes.json')
@@ -66,8 +67,6 @@ def get_modeshape(mode_shape_num:int):
 def get_magnitude(mode_shape_num:int):
     modeshapes = load_json(base_dir / 'data/modeshapes.json')
     return JSONResponse(content=modeshapes[f'magnitud_{mode_shape_num}'])
-
-
 
 origins = [
     "http://localhost",

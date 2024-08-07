@@ -14,7 +14,6 @@ def expand_ranges(range_str):
 
 def run_parsers(_dir):
     
-
     # Read the csv file, using semicolon as separator and skipping the first row
     nodes_df = pd.read_csv(_dir /'FE Mesh Nodes.csv', delimiter=';', skiprows=1)
     # Select the necessary columns

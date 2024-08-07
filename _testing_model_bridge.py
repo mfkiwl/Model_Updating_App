@@ -1,8 +1,5 @@
 import numpy as np 
-import sys
-import time
 import matplotlib.pyplot as plt 
-import time
 import opsvis as opsv
 import warnings
 import copy

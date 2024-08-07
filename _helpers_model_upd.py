@@ -1,29 +1,12 @@
 import numpy as np 
-import concurrent
 import pandas  as pd 
 import seaborn as sns
-from classes import Parameter, ProposalParameters, RecorderList, TargedParameter
+import matplotlib.pyplot as plt
+
+from classes import ProposalParameters, RecorderList, TargedParameter
 from Opensees_Engine import Model
 from typing import List, Tuple
-
-import matplotlib.pyplot as plt
 from multiprocessing import Pool
-from concurrent.futures import ProcessPoolExecutor
-
-
-def mas_dist(mu = -4.6, std =  0.5, n_samples = 1):
-    samples = np.random.normal(mu, std, n_samples)
-    return float(round(samples[0], 2))
-
-def mas_dist2(mu=-4.6, std=0.5, n_samples=1):
-    samples = np.random.normal(mu, std, n_samples)
-    return float(round(samples[0], 10))
-
-def Et_dist(mu=1.5, std=0.2, n_samples=1):
-    log_mu = np.log(mu)  
-    samples = np.random.lognormal(mean=log_mu, sigma=std, size=n_samples)
-    return np.round(samples, 2)[0]
-
 
 class ModelUpdater:
     def __init__(self,
@@ -63,6 +46,7 @@ class ModelUpdater:
                 self.target_parameter.append_posterior(propsed_freq)
         return self.recorder_list, self.target_parameter
     
+
 def run_chains_parallel(function:callable,
                         args:List[Tuple],
                         num_chains)-> List:
@@ -72,16 +56,6 @@ def run_chains_parallel(function:callable,
         results = pool.map(function, args)    
     return results
 
-def run_model_single(model,mass = '-4'):
-    proposed_mass = mas_dist()
-    model.surface_materials[0,4] = 2e-20
-    model.nodal_loads[0][4] = proposed_mass
-    model.nodal_loads[1][4] = proposed_mass
-    _, _ = model.create_model(verbose=False)
-    freq = model.Modal_analysis(20)
-    proposed_freq_4 = freq[4]**0.5 / (2 * np.pi)
-    print(proposed_freq_4,proposed_mass)
-    
     
 def plot_pair_grid(chain_result):
     # Extract the results from a single chain
