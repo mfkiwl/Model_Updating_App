@@ -16,6 +16,9 @@ class Parameter(BaseModel):
     
     def set_mean(self, mean: float):
         self.mean = mean
+    
+    def set_initval(self, initval: float):
+        self.initval = initval
 
 class ProposalParameters(BaseModel):
     ''' ParameterList class to generate propose distribution values'''
