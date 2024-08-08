@@ -36,13 +36,13 @@ nodes_df.columns = ['id', 'x', 'y', 'z']
 cross_sections_df = pd.read_csv(_dir/'1.13 Cross-Sections .csv', delimiter=';', skiprows=1, encoding='ISO-8859-1')
 # Select the necessary columns
 cross_sections_df = cross_sections_df[['No.','Torsion J', 'Bending Iy', 'Bending Iz', 'Axial A']]
-cross_sections_df.columns = ['id', 'J', 'Iy', 'Iz', 'A']
+cross_sections_df.columns = ['cross_section_id', 'J', 'Iy', 'Iz', 'A']
 
 #%% Names
-cross_sections_df = pd.read_csv(_dir /'1.13 Cross-Sections .csv', delimiter=';', skiprows=1, encoding='ISO-8859-1')
+cross_sections_names_df = pd.read_csv(_dir /'1.13 Cross-Sections .csv', delimiter=';', skiprows=1, encoding='ISO-8859-1')
 # Select the 'Description [mm]' column, which corresponds to 'Cross-Section'
-names_df = cross_sections_df[['No.','Description [mm]']]
-names_df.columns = ['id', 'name']
+names_df = cross_sections_names_df[['No.','Description [mm]']]
+names_df.columns = ['cross_section_id', 'name']
 
 #%% Shells
 mesh_cells_df = pd.read_csv(_dir /'FE Mesh Cells .csv', delimiter=';', skiprows=1)
@@ -57,13 +57,13 @@ surfaces_df = pd.read_csv(_dir /'1.4 Surfaces.csv', delimiter=';', skiprows=1)
 
 # Select the necessary columns
 surfaces_df = surfaces_df[['No.', 'No..1', 'd [mm]','A [mm2]']]
-surfaces_df.columns = ['id', 'surface_section_id', 'd', 'A']
+surfaces_df.columns = ['material_id', 'surface_section_id', 'd', 'A']
 
 #%% Element ids
 members_df = pd.read_csv(_dir /'1.17 Members.csv', delimiter=';', skiprows=1, encoding='ISO-8859-1')
 # Select the necessary columns
 members_df = members_df[[members_df.columns[1], 'Start','beta [°]']]
-members_df.columns = ['line_id', 'sec_id', 'beta']
+members_df.columns = ['line_id', 'cross_section_id', 'beta']
 
 #%% Lines
 lines_df = pd.read_csv(_dir /'1.2 Lines.csv', delimiter=';', skiprows=1, dtype=str)
@@ -78,6 +78,9 @@ lines_df[['Start Node', 'End Node']] = lines_df['Nodes No.'].str.split(',', expa
 # Select the necessary columns and rename them
 lines_df = lines_df[['No.', 'Start Node', 'End Node']]
 lines_df.columns = ['line_id', 'node_i', 'node_j']
+lines_df = lines_df.astype(int)
+# fixing type 
+
 
 #%% Materials
 pd_materials = pd.read_csv(_dir /'1.3 Materials.csv',delimiter = ';',skiprows = 1,encoding='ISO-8859-1')
@@ -97,6 +100,15 @@ pd_surface_load.columns = ['id', 'surface_section_id', 'p']
 #%% ORM Model
 
 Base = declarative_base()
+
+def create_session():
+    engine = create_engine("sqlite:///model.db", echo=True)
+    # Create table
+    Base.metadata.create_all(engine)
+    # Create session
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    return session
 
 class Nodes(Base):
     __tablename__ = 'nodes'
@@ -178,26 +190,29 @@ class SurfaceLoads(Base):
     p = Column(Float)
 
 
+if __name__ == "__main__":
 
-# Create local db
-engine = create_engine("sqlite:///model.db", echo=True)
-# Create table
-Base.metadata.create_all(engine)
-# Create session
-Session = sessionmaker(bind=engine)
-session = Session()
+    # Create local db
+    engine = create_engine("sqlite:///model.db", echo=True)
+    # Create table
+    Base.metadata.create_all(engine)
+    # Create session
+    Session = sessionmaker(bind=engine)
+    session = Session()
 
-#%% Insert data into the database
-nodes_df.to_sql('nodes', con=engine, if_exists='replace', index=False)
-cross_sections_df.to_sql('cross_sections', con=engine, if_exists='replace', index=False)
-names_df.to_sql('cross_sections_names', con=engine, if_exists='replace', index=False)
-mesh_cells_df.to_sql('shell_section_table', con=engine, if_exists='replace', index=False)
-surfaces_df.to_sql('surface_section_table', con=engine, if_exists='replace', index=False)
-members_df.to_sql('members', con=engine, if_exists='replace', index=False)
-lines_df.to_sql('lines', con=engine, if_exists='replace', index=False)
-pd_materials.to_sql('materials', con=engine, if_exists='replace', index=False)
-pd_point_loads.to_sql('point_loads', con=engine, if_exists='replace', index=False)
-pd_surface_load.to_sql('surface_loads', con=engine, if_exists='replace', index=False)
-# Close the session
-session.close()
+    #%% Insert data into the database
+    nodes_df.to_sql('nodes', con=engine, if_exists='replace', index=False)
+    cross_sections_df.to_sql('cross_sections', con=engine, if_exists='replace', index=False)
+    names_df.to_sql('cross_sections_names', con=engine, if_exists='replace', index=False)
+    mesh_cells_df.to_sql('shell_section_table', con=engine, if_exists='replace', index=False)
+    surfaces_df.to_sql('surface_section_table', con=engine, if_exists='replace', index=False)
+    members_df.to_sql('members', con=engine, if_exists='replace', index=False)
+    lines_df.to_sql('lines', con=engine, if_exists='replace', index=False)
+    pd_materials.to_sql('materials', con=engine, if_exists='replace', index=False)
+    pd_point_loads.to_sql('point_loads', con=engine, if_exists='replace', index=False)
+    pd_surface_load.to_sql('surface_loads', con=engine, if_exists='replace', index=False)
+    # Close the session
+    session.close()
 
+
+        
