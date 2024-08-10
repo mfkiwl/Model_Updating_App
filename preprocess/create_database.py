@@ -57,7 +57,7 @@ surfaces_df = pd.read_csv(_dir /'1.4 Surfaces.csv', delimiter=';', skiprows=1)
 
 # Select the necessary columns
 surfaces_df = surfaces_df[['No.', 'No..1', 'd [mm]','A [mm2]']]
-surfaces_df.columns = ['material_id', 'surface_section_id', 'd', 'A']
+surfaces_df.columns = ['surface_section_id', 'material_id', 'd', 'A']
 
 #%% Element ids
 members_df = pd.read_csv(_dir /'1.17 Members.csv', delimiter=';', skiprows=1, encoding='ISO-8859-1')
@@ -78,7 +78,7 @@ lines_df[['Start Node', 'End Node']] = lines_df['Nodes No.'].str.split(',', expa
 # Select the necessary columns and rename them
 lines_df = lines_df[['No.', 'Start Node', 'End Node']]
 lines_df.columns = ['line_id', 'node_i', 'node_j']
-lines_df = lines_df.astype(int)
+lines_df['line_id'] = lines_df['line_id'].astype(int)
 # fixing type 
 
 
@@ -89,8 +89,7 @@ pd_materials.columns = ['material_id', 'E', 'G', 'ny', 'gamma']
 #%% point loads 
 pd_point_loads = pd.read_csv(_dir /'LC1 - 3.1 Nodal Loads.csv',delimiter = ';',skiprows = 1,encoding='ISO-8859-1')
 pd_point_loads  =pd_point_loads [['No.', 'On Nodes No.','PX', 'PY', 'PZ', 'MX','MY','MZ']]
-pd_point_loads.columns = ['id', 'node_id', 'PX', 'PY', 'PZ', 'MX', 'MY', 'MZ']
-
+pd_point_loads.columns = ['id', 'node_list', 'PX', 'PY', 'PZ', 'MX', 'MY', 'MZ']
 #%% surface loads
 pd_surface_load = pd.read_csv(_dir /'LC1 - 3.4 Surface Loads.csv',delimiter = ';',skiprows = 1,encoding='ISO-8859-1')
 pd_surface_load   =pd_surface_load [['No.','On Surfaces No.',pd_surface_load.columns[6]]]
@@ -174,7 +173,7 @@ class PointLoads(Base):
     ''' PX, PY, PZ: forces, MX, MY, MZ: moments, Units: kN,kNm '''
     __tablename__ = 'point_loads'
     id = Column(Integer, primary_key=True)
-    node_id = Column(Integer)
+    node_list = Column(Integer)
     PX = Column(Float)
     PY = Column(Float)
     PZ = Column(Float)
