@@ -56,7 +56,7 @@ def run_chains_parallel(function:callable,
         results = pool.map(function, args)    
     return results
 
-    
+ 
 def plot_pair_grid(chain_result):
     # Extract the results from a single chain
     accepted_mass, freq_dist, accepted_Et = chain_result[:3]
